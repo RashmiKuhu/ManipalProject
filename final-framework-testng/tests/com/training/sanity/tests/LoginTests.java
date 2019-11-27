@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import com.training.generics.ScreenShot;
 import com.training.pom.LoginPOM;
+import com.training.pom.RetailHomePOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
@@ -22,6 +23,7 @@ public class LoginTests {
 	private LoginPOM loginPOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
+	private RetailHomePOM retailHomePOM;
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
@@ -33,6 +35,7 @@ public class LoginTests {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
+		//retailHomePOM = new RetailHomePOM(driver);
 		loginPOM = new LoginPOM(driver); 
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
@@ -47,6 +50,7 @@ public class LoginTests {
 	}
 	@Test
 	public void validLoginTest() {
+		//retailHomePOM.GotoLoginPage();
 		loginPOM.sendUserName("admin");
 		loginPOM.sendPassword("admin@123");
 		loginPOM.clickLoginBtn(); 
