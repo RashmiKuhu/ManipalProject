@@ -16,9 +16,14 @@ private WebDriver driver;
 
 	}
     
-	public void validateOrderHistroty()
+@FindBy(xpath="//*[@id=\'PageTitleSystem_B083XYxw\']/h1")
+private WebElement pageTitle;
+
+    
+	public void validateOrderHistory()
 	{
-		
-		
+		String expectedTitle="Order Information";
+		Assert.assertEquals(pageTitle.getText(), expectedTitle);
+      		
 	}
 }

@@ -92,7 +92,7 @@ public void setUp() throws Exception {
 	 myOrder.checkStatus();
 	 myOrder.clickViewIcon();
 	 screenShot.captureScreenShot("OrderHistory2_RTTC_004");
-	 
-	 
+	 orderHistory.validateOrderHistory();
+	 	 
  }
 }
