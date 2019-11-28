@@ -1,5 +1,6 @@
 package com.training.pom;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,12 +21,34 @@ private WebDriver driver;
 	@FindBy(xpath="//p[contains(text(),'Congratulations!')]")
 	private WebElement messageConfirmation;
 	
+	@FindBy(xpath="//span[contains(text(),'Home')]")
+	private WebElement homeLnk;
+	
+	@FindBy(linkText="Nam sed")
+	private WebElement NamSedProd;
+	
 	public void validateConfirmationMsg()
 	{
 		 String expectedMsg="Congratulations! Your new account has been successfully created!";
 		 Assert.assertEquals(messageConfirmation.getText(), expectedMsg);
 		
 	}
-
+    
+	public void GotoHomePage()
+	
+	{
+		homeLnk.click();
+		
+	}
+	
+	public void selectProduct()
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		 js.executeScript("window.scrollBy(0,1000)");
+		 NamSedProd.isEnabled();
+		 NamSedProd.click();
+		
+	}
+	
 }
 

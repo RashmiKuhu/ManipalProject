@@ -31,4 +31,6 @@ public class RetailHomePOM {
 		accountSelect.moveToElement(account).build().perform();
 		loginRegister.click();
 	}
+	
+	
 }

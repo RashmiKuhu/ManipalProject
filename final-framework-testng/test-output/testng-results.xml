@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46989" started-at="2019-11-27T17:59:50 IST" finished-at="2019-11-27T18:00:37 IST">
+  <suite name="Default suite" duration-ms="38842" started-at="2019-11-28T16:53:45 IST" finished-at="2019-11-28T16:54:24 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46989" started-at="2019-11-27T17:59:50 IST" finished-at="2019-11-27T18:00:37 IST">
-      <class name="com.training.simple.tests.ForgotPasswordTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.simple.tests.ForgotPasswordTest@79be0360]" name="setUpBeforeClass" is-config="true" duration-ms="31" started-at="2019-11-27T17:59:50 IST" finished-at="2019-11-27T17:59:50 IST">
+    <test name="Default test" duration-ms="38842" started-at="2019-11-28T16:53:45 IST" finished-at="2019-11-28T16:54:24 IST">
+      <class name="com.training.simple.tests.RegisterUserTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.simple.tests.RegisterUserTest@79be0360]" name="setUpBeforeClass" is-config="true" duration-ms="19" started-at="2019-11-28T16:53:45 IST" finished-at="2019-11-28T16:53:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.simple.tests.ForgotPasswordTest@79be0360]" name="setUp" is-config="true" duration-ms="23423" started-at="2019-11-27T17:59:50 IST" finished-at="2019-11-27T18:00:14 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.simple.tests.RegisterUserTest@79be0360]" name="setUp" is-config="true" duration-ms="27350" started-at="2019-11-28T16:53:45 IST" finished-at="2019-11-28T16:54:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ForgotPasswordTest()[pri:0, instance:com.training.simple.tests.ForgotPasswordTest@79be0360]" name="ForgotPasswordTest" duration-ms="11575" started-at="2019-11-27T18:00:14 IST" finished-at="2019-11-27T18:00:25 IST">
+        <test-method status="PASS" signature="RegisterUserTest()[pri:0, instance:com.training.simple.tests.RegisterUserTest@79be0360]" name="RegisterUserTest" duration-ms="8981" started-at="2019-11-28T16:54:12 IST" finished-at="2019-11-28T16:54:21 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ForgotPasswordTest -->
-        <test-method status="PASS" signature="ForgotPasswordTest()[pri:0, instance:com.training.simple.tests.ForgotPasswordTest@79be0360]" name="ForgotPasswordTest" is-config="true" duration-ms="11910" started-at="2019-11-27T18:00:25 IST" finished-at="2019-11-27T18:00:37 IST">
+        </test-method> <!-- RegisterUserTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.simple.tests.RegisterUserTest@79be0360]" name="tearDown" is-config="true" duration-ms="2428" started-at="2019-11-28T16:54:21 IST" finished-at="2019-11-28T16:54:24 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ForgotPasswordTest -->
-      </class> <!-- com.training.simple.tests.ForgotPasswordTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.simple.tests.RegisterUserTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

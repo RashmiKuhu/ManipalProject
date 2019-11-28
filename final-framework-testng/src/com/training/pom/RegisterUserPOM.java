@@ -70,9 +70,10 @@ private WebDriver driver;
 		this.firstName.clear();
 		this.firstName.sendKeys(firstName);
 		
+				
 		this.lastName.clear();
 		this.lastName.sendKeys(lastName);
-		
+		 
 		this.eMail.clear();
 		this.eMail.sendKeys(eMail);
 		
@@ -126,6 +127,13 @@ private WebDriver driver;
 		this.continue_Btn.click();
 		
 	}
+	
+	  public String CustomerFullName()
+	  {
+		  return firstName.getText()+lastName.getText();
+		  
+		  
+	  }
 	
 
 	
