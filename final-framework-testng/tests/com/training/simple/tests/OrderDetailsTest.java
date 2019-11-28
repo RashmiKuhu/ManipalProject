@@ -84,7 +84,8 @@ public void setUp() throws Exception {
  
  @Test 
    public void ValidateOrder() //This test case is to validate Order history 
- 
+
+  
  {
 	 orderConfirmationPOM.GotoMyOrders();
 	 screenShot.captureScreenShot("OrderHistory1_RTTC_004");
