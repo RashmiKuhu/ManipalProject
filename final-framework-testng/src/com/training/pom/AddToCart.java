@@ -32,23 +32,22 @@ private WebElement checkoutBtn;
 
 
 
-   public void clickAddToCart()
+   public void clickAddToCart() //This method is to click on Add to cart button
       {
 	   addToCardBtn.click();
 	   
       }
 
-   public void validateAlert()
-   
-   { 
+   public void validateAlert() //This method is to Validate the alert message.
+     { 
 	   Alert sucessAddToCart= driver.switchTo().alert();
 	   String expectedAlert="Success: You have added lacinia congue to your shopping cart!";
 	   sucessAddToCart.accept();
 	   Assert.assertEquals(alertMsg.getText(), expectedAlert);
 	   
-   }
+    }
    
-   public void clickCheckOut()
+   public void clickCheckOut()  //this method  is to click on the checkout button. 
    {   
 	  Actions cartSelect=new Actions(driver);
 	  cartSelect.moveToElement(shoppingCart).build().perform();

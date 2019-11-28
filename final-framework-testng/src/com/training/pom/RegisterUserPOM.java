@@ -52,7 +52,7 @@ private WebDriver driver;
 	@FindBy(id="input-confirm") 
 	private WebElement passwordConfirm;
 	
-	@FindBy(xpath="//label[contains(text(),'Yes')]")  // change below with contains 
+	@FindBy(xpath="//label[contains(text(),'Yes')]")
 	private WebElement subscribe;
 	
 	@FindBy(xpath="//label[contains(text(),'No')]")
@@ -65,6 +65,7 @@ private WebDriver driver;
 	private WebElement continue_Btn;
 	
 	
+	//Below method is to Populate User details for registerting user
 	public void populateUser(String firstName,String lastName,String eMail,String telephone,String addressOne,String addressTwo,String city,String poctCode,String country,String state) throws Exception
 	{
 		this.firstName.clear();
@@ -105,35 +106,17 @@ private WebDriver driver;
 		this.passwordConfirm.clear();
 		this.passwordConfirm.sendKeys("Test123");
 		
-		//		this.subscribe.isEnabled();
-		this.subscribe.click();
+     	this.subscribe.isEnabled();
+	    this.subscribe.click();
+	 
 		this.subscribeOne.click();
-		//this.subscribe.isSelected();
 		
 		this.privacy.isEnabled();
-		if (this.privacy.isSelected())
-		{
-			this.continue_Btn.click(); 
-		}
-		else {
-			
 		this.privacy.click();
-		}
-		
-		//this.privacy.isEnabled();
-		//this.privacy.click();
-		//this.privacy.isSelected();
-		
+			
 		this.continue_Btn.click();
 		
 	}
-	
-	  public String CustomerFullName()
-	  {
-		  return firstName.getText()+lastName.getText();
-		  
-		  
-	  }
 	
 
 	

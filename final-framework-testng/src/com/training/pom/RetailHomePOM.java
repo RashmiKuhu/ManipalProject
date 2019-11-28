@@ -25,7 +25,7 @@ public class RetailHomePOM {
 	
 	
 
-	public void GotoLoginPage()
+	public void GotoLoginPage() //this fuction is to Navigate to Login/Register page.
 	{
 		accountSelect=new Actions(driver);
 		accountSelect.moveToElement(account).build().perform();
