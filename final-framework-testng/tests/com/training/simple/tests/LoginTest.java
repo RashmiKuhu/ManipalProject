@@ -23,16 +23,17 @@ import com.training.utility.DriverNames;
 
 
 public class LoginTest {
-	private WebDriver driver;
-	private String baseUrl;
-	private LoginRegisterPOM loginRegisterPOM;
-	private RetailHomePOM retailHomePOM;
-	private MyAccountPOM myAccountPOM;
-	private ForgotPasswordPOM forgotPasswordPOM;
-		private static Properties properties;
-	private ScreenShot screenShot;
+
+private WebDriver driver;
+private String baseUrl;
+private LoginRegisterPOM loginRegisterPOM;
+private RetailHomePOM retailHomePOM;
+private MyAccountPOM myAccountPOM;
+private ForgotPasswordPOM forgotPasswordPOM;
+private static Properties properties;
+private ScreenShot screenShot;
 	
-	@BeforeClass
+@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
@@ -40,7 +41,7 @@ public class LoginTest {
 		 
 	}
 	
-	@BeforeMethod
+@BeforeMethod
 
 	public void setUp() throws Exception {
 	        driver = DriverFactory.getDriver(DriverNames.CHROME);
@@ -53,10 +54,9 @@ public class LoginTest {
 	 		driver.get(baseUrl); 	// open the browser
      		retailHomePOM.GotoLoginPage();
      		
-		
-	}
+		}
 	
-	@AfterMethod
+@AfterMethod
 	
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
@@ -64,13 +64,14 @@ public class LoginTest {
 	}
 	
 
-	@Test
+//This test case is to Login into application with provided user id and password
+@Test
 	public void UserLoginTest()
 	{
 		loginRegisterPOM.userDetails("Reshu123@gmail.com","reshu123");
 		loginRegisterPOM.clickLoginBtn();
 		myAccountPOM.validateConfirmationMsg();
-		screenShot.captureScreenShot("MyAccountPage");
+		screenShot.captureScreenShot("MyAccountPage_RTTC_002");
 		
 		}
 	

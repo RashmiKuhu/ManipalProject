@@ -23,7 +23,7 @@ public class MyAccountPOM {
 	@FindBy(xpath="//h2[contains(text(),'My Account')]")
 	private WebElement messageAccountPage;
 	
-	public void validateConfirmationMsg()
+	public void validateConfirmationMsg()  //This method is to validate that My Account page is displayed
 	{
 		 String expectedMsg="My Account";
 		 Assert.assertEquals(messageAccountPage.getText(), expectedMsg);

@@ -83,7 +83,7 @@ public void setUp() throws Exception {
 		
  
  @Test 
-   public void ValidateOrder()
+   public void ValidateOrder() //This test case is to validate Order history 
  
  {
 	 orderConfirmationPOM.GotoMyOrders();

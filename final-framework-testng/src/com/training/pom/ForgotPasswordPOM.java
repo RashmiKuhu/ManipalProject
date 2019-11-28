@@ -8,7 +8,6 @@ import org.testng.Assert;
 
 
 public class ForgotPasswordPOM {
-
 private WebDriver driver; 
 	
 	public ForgotPasswordPOM(WebDriver driver) {
@@ -17,28 +16,26 @@ private WebDriver driver;
 
 	}
 
+@FindBy(xpath="//legend[contains(text(),'Your E-Mail Address')]")
+private WebElement msgForgotPwdPage;
 	
-	@FindBy(xpath="//legend[contains(text(),'Your E-Mail Address')]")
-	private WebElement msgForgotPwdPage;
+@FindBy(name="email")
+private WebElement eMail;
 	
-	@FindBy(name="email")
-	private WebElement eMail;
-	
-	@FindBy(xpath="//input[@class='btn btn-primary']")
-	private WebElement continueBtn;
+@FindBy(xpath="//input[@class='btn btn-primary']")
+private WebElement continueBtn;
 	
 	
-	public void PopulateEmail(String eMail)
-	
-	{
+     public void PopulateEmail(String eMail) //This method is to Populate email id in forget Password page
+	   {
 		this.eMail.clear();
 		this.eMail.sendKeys(eMail);
 		
-	}
+    	}
 	
-	public void clickContinueBtn()
-	{
+	public void clickContinueBtn()  // This method is to click on Continue button
+	  {
 		continueBtn.click();	
-	}
+	  }
 	
 }

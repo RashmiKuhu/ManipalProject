@@ -23,15 +23,16 @@ import com.training.utility.DriverNames;
 
 
 public class ForgotPasswordTest {
-	private WebDriver driver;
-	private String baseUrl;
-	private RetailHomePOM retailHomePOM;
-	private LoginRegisterPOM loginRegisterPOM;
-	private ForgotPasswordPOM forgotPasswordPOM;
-	private static Properties properties;
-	private ScreenShot screenShot;
+
+private WebDriver driver;
+private String baseUrl;
+private RetailHomePOM retailHomePOM;
+private LoginRegisterPOM loginRegisterPOM;
+private ForgotPasswordPOM forgotPasswordPOM;
+private static Properties properties;
+private ScreenShot screenShot;
 	
-	@BeforeClass
+@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
@@ -39,22 +40,22 @@ public class ForgotPasswordTest {
 		 
 	}
 	
-	@BeforeMethod
+@BeforeMethod
 
-	public void setUp() throws Exception {
-	        driver = DriverFactory.getDriver(DriverNames.CHROME);
-			baseUrl = properties.getProperty("baseURL");
-			retailHomePOM = new RetailHomePOM(driver);
-			loginRegisterPOM = new LoginRegisterPOM(driver);
-    	    forgotPasswordPOM = new ForgotPasswordPOM(driver);
-		    screenShot = new ScreenShot(driver); 
-	 		driver.get(baseUrl); 	// open the browser
-     		retailHomePOM.GotoLoginPage();
+public void setUp() throws Exception {
+        driver = DriverFactory.getDriver(DriverNames.CHROME);
+    	baseUrl = properties.getProperty("baseURL");
+		retailHomePOM = new RetailHomePOM(driver);
+		loginRegisterPOM = new LoginRegisterPOM(driver);
+        forgotPasswordPOM = new ForgotPasswordPOM(driver);
+	    screenShot = new ScreenShot(driver); 
+ 		driver.get(baseUrl); 	// open the browser
+   		retailHomePOM.GotoLoginPage();
      		
 		
 	}
-	
-	@AfterMethod
+
+@AfterMethod
 	
     public void tearDown() throws Exception {
 	Thread.sleep(1000);
@@ -62,8 +63,8 @@ public class ForgotPasswordTest {
 	}
 	
 
-	
-	@Test
+//This test case is to validate Forgot Password functionality
+@Test
 	public void ForgotPasswordTest()
 		{
 		loginRegisterPOM.userDetails("Reshu123@gmail.com","ertyuu");
