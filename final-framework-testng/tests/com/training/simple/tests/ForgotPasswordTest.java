@@ -1,6 +1,6 @@
 package com.training.simple.tests;
-import com.training.pom.RetailHomePOM;
 
+import com.training.pom.RetailHomePOM;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -22,14 +22,13 @@ import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
 
-public class LoginTest {
+public class ForgotPasswordTest {
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginRegisterPOM loginRegisterPOM;
 	private RetailHomePOM retailHomePOM;
-	private MyAccountPOM myAccountPOM;
+	private LoginRegisterPOM loginRegisterPOM;
 	private ForgotPasswordPOM forgotPasswordPOM;
-		private static Properties properties;
+	private static Properties properties;
 	private ScreenShot screenShot;
 	
 	@BeforeClass
@@ -46,8 +45,7 @@ public class LoginTest {
 	        driver = DriverFactory.getDriver(DriverNames.CHROME);
 			baseUrl = properties.getProperty("baseURL");
 			retailHomePOM = new RetailHomePOM(driver);
-    	    loginRegisterPOM = new LoginRegisterPOM(driver);
-    	    myAccountPOM = new MyAccountPOM(driver);
+			loginRegisterPOM = new LoginRegisterPOM(driver);
     	    forgotPasswordPOM = new ForgotPasswordPOM(driver);
 		    screenShot = new ScreenShot(driver); 
 	 		driver.get(baseUrl); 	// open the browser
@@ -58,21 +56,29 @@ public class LoginTest {
 	
 	@AfterMethod
 	
-	public void tearDown() throws Exception {
-		Thread.sleep(1000);
-	 driver.quit();
+    public void tearDown() throws Exception {
+	Thread.sleep(1000);
+	driver.quit();
 	}
 	
 
+	
 	@Test
-	public void UserLoginTest()
-	{
-		loginRegisterPOM.userDetails("Reshu123@gmail.com","reshu123");
+	public void ForgotPasswordTest()
+		{
+		loginRegisterPOM.userDetails("Reshu123@gmail.com","ertyuu");
 		loginRegisterPOM.clickLoginBtn();
-		myAccountPOM.validateConfirmationMsg();
-		screenShot.captureScreenShot("MyAccountPage");
-		
-		}
-	
-	
+		loginRegisterPOM.validateWarningInvalidPassword();
+		screenShot.captureScreenShot("WarningMsgRTTC_003");
+		loginRegisterPOM.clickForgotPasswordLnk();
+		forgotPasswordPOM.PopulateEmail("Reshu123@gmail.com");
+		forgotPasswordPOM.clickContinueBtn();
+		loginRegisterPOM.validateConfirmationMsg();
+		screenShot.captureScreenShot("ConfirmationMsgRTTC_003");
+	}
 }
+
+
+
+
+

@@ -2,105 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58164" started-at="2019-11-26T18:21:13 IST" finished-at="2019-11-26T18:22:12 IST">
+  <suite name="Default suite" duration-ms="46989" started-at="2019-11-27T17:59:50 IST" finished-at="2019-11-27T18:00:37 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58164" started-at="2019-11-26T18:21:13 IST" finished-at="2019-11-26T18:22:12 IST">
-      <class name="com.training.simple.tests.LoginTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.simple.tests.LoginTest@79be0360]" name="setUpBeforeClass" is-config="true" duration-ms="15" started-at="2019-11-26T18:21:13 IST" finished-at="2019-11-26T18:21:13 IST">
+    <test name="Default test" duration-ms="46989" started-at="2019-11-27T17:59:50 IST" finished-at="2019-11-27T18:00:37 IST">
+      <class name="com.training.simple.tests.ForgotPasswordTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.simple.tests.ForgotPasswordTest@79be0360]" name="setUpBeforeClass" is-config="true" duration-ms="31" started-at="2019-11-27T17:59:50 IST" finished-at="2019-11-27T17:59:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.simple.tests.LoginTest@79be0360]" name="setUp" is-config="true" duration-ms="23615" started-at="2019-11-26T18:21:13 IST" finished-at="2019-11-26T18:21:37 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.simple.tests.ForgotPasswordTest@79be0360]" name="setUp" is-config="true" duration-ms="23423" started-at="2019-11-27T17:59:50 IST" finished-at="2019-11-27T18:00:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UserLoginTest()[pri:0, instance:com.training.simple.tests.LoginTest@79be0360]" name="UserLoginTest" duration-ms="4422" started-at="2019-11-26T18:21:37 IST" finished-at="2019-11-26T18:21:42 IST">
+        <test-method status="PASS" signature="ForgotPasswordTest()[pri:0, instance:com.training.simple.tests.ForgotPasswordTest@79be0360]" name="ForgotPasswordTest" duration-ms="11575" started-at="2019-11-27T18:00:14 IST" finished-at="2019-11-27T18:00:25 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserLoginTest -->
-        <test-method status="FAIL" signature="UserLoginTest()[pri:0, instance:com.training.simple.tests.LoginTest@79be0360]" name="UserLoginTest" is-config="true" duration-ms="30063" started-at="2019-11-26T18:21:42 IST" finished-at="2019-11-26T18:22:12 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
-  (Session info: chrome=78.0.3904.108)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-G9U9536', ip: '9.102.55.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir24820_743084764}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62049}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: eb8ac38c312a2414559b69f667a5f31c
-*** Element info: {Using=id, value=input-email}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#input\-email"}
-  (Session info: chrome=78.0.3904.108)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-G9U9536', ip: '9.102.55.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir24820_743084764}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:62049}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: eb8ac38c312a2414559b69f667a5f31c
-*** Element info: {Using=id, value=input-email}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:402)
-at org.openqa.selenium.By$ById.findElement(By.java:218)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.clear(Unknown Source)
-at com.training.pom.LoginRegisterPOM.userDetails(LoginRegisterPOM.java:36)
-at com.training.simple.tests.LoginTest.UserLoginTest(LoginTest.java:67)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- ForgotPasswordTest -->
+        <test-method status="PASS" signature="ForgotPasswordTest()[pri:0, instance:com.training.simple.tests.ForgotPasswordTest@79be0360]" name="ForgotPasswordTest" is-config="true" duration-ms="11910" started-at="2019-11-27T18:00:25 IST" finished-at="2019-11-27T18:00:37 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserLoginTest -->
-      </class> <!-- com.training.simple.tests.LoginTest -->
+        </test-method> <!-- ForgotPasswordTest -->
+      </class> <!-- com.training.simple.tests.ForgotPasswordTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
