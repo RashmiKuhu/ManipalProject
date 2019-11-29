@@ -1,6 +1,10 @@
 package com.training.dataproviders;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
+import java.util.Properties;
 
 import org.testng.annotations.DataProvider;
 
@@ -11,7 +15,8 @@ import com.training.readexcel.ReadExcel;
 
 public class LoginDataProviders {
 
-	@DataProvider(name = "db-inputs")
+	 
+ 	@DataProvider(name = "db-inputs")
 	public Object [][] getDBData() {
 
 		List<LoginBean> list = new ELearningDAO().getLogins(); 
@@ -37,8 +42,15 @@ public class LoginDataProviders {
 	}
 	
 	@DataProvider(name = "xls-inputs")
-	public Object[][] getXLSData(){
+	public Object[][] getXLSData() throws IOException{
+
+		Properties properties = new Properties();
+		FileInputStream inStream = new FileInputStream("./resources/others.properties");
+		properties.load(inStream);
+		String xlsFile =properties.getProperty("excelfile1");
+		String  xlssheet =properties.getProperty("sheet");
 		// ensure you will have the title as first line in the file 
-		return new ReadExcel().getExcelData("C:/Users/Naveen/Desktop/Testing.xls", "Sheet1"); 
+		//return new ReadExcel().getExcelData("C:\\Users\\RASHMISINGH\\Desktop\\Reskill (selenium +API)\\RegisterNewUser.xls", "DataSheet");
+		return new ReadExcel().getExcelData(xlsFile, xlssheet); 
 	}
 }

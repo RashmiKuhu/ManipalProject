@@ -64,7 +64,7 @@ private ConfirmLoginPOM confirmLoginPOM;
 	@Test
 	public void RegisterUserTest() throws Exception
 	{
-			
+					
     registeUserPOM.populateUser("Rashmi1","Singh","rashmi.singh1@gmail.com","876543234","Kadugodi","Kannamangala","bangalore","560067","India","Karnataka");
 	confirmLoginPOM.validateConfirmationMsg();
 	screenShot.captureScreenShot("AccountCreated_RTTC_001");
