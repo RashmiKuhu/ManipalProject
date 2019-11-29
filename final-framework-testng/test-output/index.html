@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\RASHMISINGH\AppData\Local\Temp\testng-eclipse-1116051021\testng-customsuite.xml</span>
+                    <span>C:\Users\RASHMISINGH\AppData\Local\Temp\testng-eclipse--121237894\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -128,14 +128,15 @@
                   <a name="RegisterUserTest">
                   </a> <!-- RegisterUserTest -->
                   <span class="method-name">RegisterUserTest</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Data Provider public java.lang.Object[][] com.training.dataproviders.LoginDataProviders.getXLSData() throws java.io.IOException returned a null value
-	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:148)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:820)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:762)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:60)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:39)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:771)
+                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
+[public void com.training.simple.tests.TestExcel.RegisterUserTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws java.lang.Exception] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: RegisterUserTest([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=4, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=5, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=6, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=7, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=8, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Kuhu,(java.lang.String) Singh,(java.lang.String) kuhuReshu@gmail.com,(java.lang.String) 987654321,(java.lang.String) Kadugodi,(java.lang.String) Kannamangala,(java.lang.String) Bangalore,(java.lang.String) 560067,(java.lang.String) India,(java.lang.String) Karnataka]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:925)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -164,7 +165,7 @@ Data Provider public java.lang.Object[][] com.training.dataproviders.LoginDataPr
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\RASHMISINGH\AppData\Local\Temp\testng-eclipse-1116051021\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\RASHMISINGH\AppData\Local\Temp\testng-eclipse--121237894\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -217,12 +218,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'RegisterUserTest')
 data.setCell(0, 2, 'com.training.simple.tests.TestExcel')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 140);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 140 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->

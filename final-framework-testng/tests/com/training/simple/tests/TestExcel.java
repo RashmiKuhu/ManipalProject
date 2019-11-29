@@ -62,9 +62,9 @@ public void setUp() throws Exception {
 
 @Test(dataProvider = "xls-inputs", dataProviderClass = LoginDataProviders.class)
 
-public void RegisterUserTest(String firstName,String lastName,String eMail,String mobileNumber,String address,String extraAddress,String city,String postCode,String country,String state ) throws Exception
+public void RegisterUserTest(String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state ) throws Exception
 {
-	registeUserPOM.populateUser(firstName,lastName,eMail,mobileNumber,address,extraAddress,city,postCode,country,state);
+	registeUserPOM.populateUser(firstName,lastName,eMail,telephone,address,extraAddress,city,postCode,country,state);
 	
 	
 	screenShot.captureScreenShot("Test1");
