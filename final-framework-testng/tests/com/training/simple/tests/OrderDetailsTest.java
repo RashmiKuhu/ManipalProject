@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import com.training.generics.ScreenShot;
 
 import com.training.pom.RetailHomePOM;
-import com.training.pom.AddToCart;
+import com.training.pom.AddToCartPOM;
 import com.training.pom.LoginRegisterPOM;
 import com.training.pom.MyOrder;
 import com.training.pom.OrderConfirmationPOM;
@@ -33,7 +33,7 @@ private RetailHomePOM retailHomePOM;
 private LoginRegisterPOM loginRegisterPOM;
 private RegisterUserPOM registeUserPOM;
 private ConfirmLoginPOM confirmLoginPOM;
-private AddToCart addToCart;
+private AddToCartPOM addToCart;
 private OrderFinalizePOM orderFinalizePOM;
 private OrderConfirmationPOM orderConfirmationPOM;
 private MyOrder myOrder;
@@ -59,7 +59,7 @@ public void setUp() throws Exception {
 	loginRegisterPOM = new LoginRegisterPOM(driver);
 	registeUserPOM = new RegisterUserPOM(driver);
 	confirmLoginPOM = new ConfirmLoginPOM(driver);
-	addToCart = new AddToCart(driver);
+	addToCart = new AddToCartPOM(driver);
 	orderFinalizePOM = new OrderFinalizePOM(driver);
 	orderConfirmationPOM = new OrderConfirmationPOM(driver);
 	myOrder = new MyOrder(driver);

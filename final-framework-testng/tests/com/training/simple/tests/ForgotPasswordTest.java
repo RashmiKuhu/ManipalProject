@@ -55,12 +55,12 @@ public void setUp() throws Exception {
 		
 	}
 
-@AfterMethod
+//@AfterMethod
 	
-    public void tearDown() throws Exception {
-	Thread.sleep(1000);
-	driver.quit();
-	}
+  //  public void tearDown() throws Exception {
+	//Thread.sleep(1000);
+	//driver.quit();
+	//}
 	
 
 //This test case is to validate Forgot Password functionality
@@ -69,7 +69,7 @@ public void setUp() throws Exception {
 		{
 		loginRegisterPOM.userDetails("Reshu123@gmail.com","ertyuu");
 		loginRegisterPOM.clickLoginBtn();
-		loginRegisterPOM.validateWarningInvalidPassword();
+		loginRegisterPOM.validateWarningInvalidPassword("Warning: No match for E-Mail Address and/or Password.");
 		screenShot.captureScreenShot("WarningMsgRTTC_003");
 		loginRegisterPOM.clickForgotPasswordLnk();
 		forgotPasswordPOM.PopulateEmail("Reshu123@gmail.com");

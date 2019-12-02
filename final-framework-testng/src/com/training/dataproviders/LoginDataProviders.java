@@ -53,4 +53,17 @@ public class LoginDataProviders {
 		//return new ReadExcel().getExcelData("C:\\Users\\RASHMISINGH\\Desktop\\Reskill (selenium +API)\\RegisterNewUser.xls", "DataSheet");
 		return new ReadExcel().getExcelData(xlsFile, xlssheet); 
 	}
+	
+	@DataProvider(name = "xls-Login")
+	public Object[][] getXLSDataLogin() throws IOException{
+
+		Properties properties = new Properties();
+		FileInputStream inStream = new FileInputStream("./resources/others.properties");
+		properties.load(inStream);
+		String xlsFile =properties.getProperty("excelfile1");
+		String  xlssheet =properties.getProperty("sheet1");
+		// ensure you will have the title as first line in the file 
+		//return new ReadExcel().getExcelData("C:\\Users\\RASHMISINGH\\Desktop\\Reskill (selenium +API)\\RegisterNewUser.xls", "DataSheet");
+		return new ReadExcel().getExcelData(xlsFile, xlssheet); 
+	}
 }

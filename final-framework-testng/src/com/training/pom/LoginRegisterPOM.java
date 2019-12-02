@@ -57,10 +57,9 @@ private WebDriver driver;
 		loginBtn.click();
 	}
 	
-	public void validateWarningInvalidPassword()
-	{
-		 String expectedMsg="Warning: No match for E-Mail Address and/or Password.";
-		 Assert.assertEquals(invalideUserWng.getText(), expectedMsg);
+	public void validateWarningInvalidPassword(String msg)
+	{            //String expectedMsg="Warning: No match for E-Mail Address and/or Password.";
+		 		 Assert.assertEquals(invalideUserWng.getText(), msg);
 		
 	}
 	
@@ -76,6 +75,14 @@ private WebDriver driver;
 	    Assert.assertEquals(actConfirmMsg.getText(),expConfirmationMsg );	
 	}
 	
+	public void LoginValidation(String eMail,String Password,String msg)
+	{
+		this.eMail.clear();
+		this.eMail.sendKeys(eMail);
+		this.password.clear();
+		this.password.sendKeys(Password);
+		 
+	}
 }
 
 
