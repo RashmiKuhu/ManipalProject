@@ -9,15 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,045</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">53,851</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.training.simple.tests.ForgotPasswordTest</td><td><a href="#m0">ForgotPasswordTest</a></td><td rowspan="1">1575307068973</td><td rowspan="1">3356</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.training.simple.tests.RegisterUserTest</td><td><a href="#m0">RegisterUserTest</a></td><td rowspan="1">1575374235729</td><td rowspan="1">26808</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.training.simple.tests.ForgotPasswordTest#ForgotPasswordTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problem: 
-	Syntax error, insert &quot;;&quot; to complete BlockStatements
-
-	at com.training.pom.LoginRegisterPOM.validateWarningInvalidPassword(LoginRegisterPOM.java:61)
-	at com.training.simple.tests.ForgotPasswordTest.ForgotPasswordTest(ForgotPasswordTest.java:72)
+<h2>Default test</h2><h3 id="m0">com.training.simple.tests.RegisterUserTest#RegisterUserTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th></tr><tr class="param stripe"><td>Kuhu</td><td>Singh</td><td>kuhuReshu12@gmail.com</td><td>987654321</td><td>Kadugodi</td><td>Kannamangala</td><td>Bangalore</td><td>560067</td><td>India</td><td>Karnataka</td><td>reshu198</td><td>reshu198</td></tr><tr><th colspan="12">Exception</th></tr><tr><td colspan="12"><div class="stacktrace">java.lang.NullPointerException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.getText(Unknown Source)
+	at com.training.pom.ConfirmLoginPOM.validateConfirmationMsg(ConfirmLoginPOM.java:41)
+	at com.training.simple.tests.RegisterUserTest.RegisterUserTest(RegisterUserTest.java:70)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)

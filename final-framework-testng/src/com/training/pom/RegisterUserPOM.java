@@ -118,6 +118,57 @@ private WebDriver driver;
 		
 	}
 	
+	public void populateUserinput(String firstName,String lastName,String eMail,String telephone,String addressOne,String addressTwo,String city,String poctCode,String country,String state) throws Exception
+	{
+		this.firstName.clear();
+		this.firstName.sendKeys(firstName);
+		
+				
+		this.lastName.clear();
+		this.lastName.sendKeys(lastName);
+		 
+		this.eMail.clear();
+		this.eMail.sendKeys(eMail);
+		
+		this.telephone.clear();
+		this.telephone.click();
+		this.telephone.sendKeys(telephone);
+		
+		this.addressOne.clear();
+		this.addressOne.sendKeys(addressOne);
+		
+		this.addressTwo.clear();
+		this.addressTwo.sendKeys(addressTwo);
+	    
+		this.city.clear();
+		this.city.sendKeys(city);
+	  
+		this.poctCode.clear();
+		this.poctCode.sendKeys(poctCode);
+		
+		Select contryDropdown = new Select(this.country);
+		contryDropdown.selectByVisibleText(country);
+		
+		Select stateDropdown = new Select(this.state);
+		stateDropdown.selectByVisibleText(state);
+	   
+		this.password.clear();
+		this.password.sendKeys("reshu123");
+		
+		this.passwordConfirm.clear();
+		this.passwordConfirm.sendKeys("reshu123");
+		
+     	this.subscribe.isEnabled();
+	    this.subscribe.click();
+	 
+		this.subscribeOne.click();
+		
+		this.privacy.isEnabled();
+		this.privacy.click();
+			
+		this.continue_Btn.click();
+		
+	}
 
 	
 	

@@ -70,7 +70,7 @@ public void setUp() throws Exception {
 // Below steps are to Navigate to Account and go to Login/Register Page ,Registering user with provided value, Going to Home page and selecting the product , Add the product to Cart and then place Order.				
 	 retailHomePOM.GotoLoginPage();
 	 loginRegisterPOM.clickRegisterBtn();
-	 registeUserPOM.populateUser("Kuhu1", "Singh", "kuhu12@gmail.com", "2345676709","kadugodi", "Kannamangala", "bangalore","560067","India","Karnataka");
+	 registeUserPOM.populateUserinput("Kuhu1", "Singh", "kuhu12@gmail.com", "2345676709","kadugodi", "Kannamangala", "bangalore","560067","India","Karnataka");
 	 confirmLoginPOM.validateConfirmationMsg();
 	 confirmLoginPOM.GotoHomePage();
 	 confirmLoginPOM.selectProduct();

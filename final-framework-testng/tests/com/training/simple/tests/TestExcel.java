@@ -29,6 +29,8 @@ private static Properties properties;
 private ScreenShot screenShot;
 private RegisterUserPOM registeUserPOM;
 private ConfirmLoginPOM confirmLoginPOM;
+private static String fileName;
+private static String sheet;
 
 @BeforeClass
 public static void setUpBeforeClass() throws IOException {
@@ -43,6 +45,8 @@ public static void setUpBeforeClass() throws IOException {
 public void setUp() throws Exception {
 	driver = DriverFactory.getDriver(DriverNames.CHROME);
 	baseUrl = properties.getProperty("baseURL");
+	String fileName ="C:\\\\Users\\\\RASHMISINGH\\\\git\\\\ManipalProject\\\\final-framework-testng\\\\resources\\\\RegisterNewUser.xls";
+	String sheet="DataSheet";
 	retailHomePOM = new RetailHomePOM(driver);
 	loginRegisterPOM = new LoginRegisterPOM(driver);
 	registeUserPOM = new RegisterUserPOM(driver);
@@ -60,22 +64,27 @@ public void setUp() throws Exception {
 	driver.quit();
    }
 
-@Test(dataProvider = "xls-inputs", dataProviderClass = LoginDataProviders.class)
+//@Test(dataProvider = "xls-inputs", dataProviderClass = LoginDataProviders.class)
 
-public void RegisterUserTest(String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state ) throws Exception
-{
-	registeUserPOM.populateUser(firstName,lastName,eMail,telephone,address,extraAddress,city,postCode,country,state);
+//public void RegisterUserTest(String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state,String password,String confirmPassword ) throws Exception
+//{
+	//registeUserPOM.populateUser(firstName,lastName,eMail,telephone,address,extraAddress,city,postCode,country,state,password,confirmPassword);
 	
 	
-	screenShot.captureScreenShot("Test1");
+//	screenShot.captureScreenShot("Test1");
 		
 
-confirmLoginPOM.validateConfirmationMsg();
-screenShot.captureScreenShot("AccountCreated_RTTC_001");
+// confirmLoginPOM.validateConfirmationMsg();
+// screenShot.captureScreenShot("AccountCreated_RTTC_001");
 
 
-}
+//}
 
+@Test(dataProvider = "xls-Loginnew", dataProviderClass = LoginDataProviders.class(fileName,sheet))
+
+public void test()
+{
+	}
  	
 
 }
