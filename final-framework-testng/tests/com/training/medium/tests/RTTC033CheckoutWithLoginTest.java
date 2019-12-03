@@ -26,34 +26,33 @@ import com.training.pom.MyOrder;
 	import com.training.utility.DriverFactory;
 	import com.training.utility.DriverNames;
 
-	public class RTTC033CheckoutWithLoginTest  {
+public class RTTC033CheckoutWithLoginTest  {
 		
-	private WebDriver driver;
-	private String baseUrl;
-	private RetailHomePOM retailHomePOM;
-	private LoginRegisterPOM loginRegisterPOM;
-	private MyAccountPOM myAccountPOM;
-	private ConfirmLoginPOM confirmLoginPOM;
-	private OrderFinalizePOM orderFinalizePOM;
-	private OrderConfirmationPOM orderConfirmationPOM;
-	private AddToCartPOM addToCartPOM;
-	private ShoppingCartPOM shoppingCartPOM;
-	private CheckoutOptions checkoutOptions;
-	private static Properties properties;
-	private ScreenShot screenShot;
+private WebDriver driver;
+private String baseUrl;
+private RetailHomePOM retailHomePOM;
+private LoginRegisterPOM loginRegisterPOM;
+private MyAccountPOM myAccountPOM;
+private ConfirmLoginPOM confirmLoginPOM;
+private OrderFinalizePOM orderFinalizePOM;
+private OrderConfirmationPOM orderConfirmationPOM;
+private AddToCartPOM addToCartPOM;
+private ShoppingCartPOM shoppingCartPOM;
+private CheckoutOptions checkoutOptions;
+private static Properties properties;
+private ScreenShot screenShot;
 		
 
-		@BeforeClass
-		public static void setUpBeforeClass() throws IOException {
+@BeforeClass
+	public static void setUpBeforeClass() throws IOException {
 			properties = new Properties();
 			FileInputStream inStream = new FileInputStream("./resources/others.properties");
 			properties.load(inStream);
 			 
 		}
 		
-		@BeforeMethod
-
-		public void setUp() throws Exception {
+@BeforeMethod
+public void setUp() throws Exception {
 	    	driver = DriverFactory.getDriver(DriverNames.CHROME);
 			baseUrl = properties.getProperty("baseURL");
 			retailHomePOM = new RetailHomePOM(driver);
@@ -64,43 +63,46 @@ import com.training.pom.MyOrder;
 			shoppingCartPOM=new ShoppingCartPOM(driver);
 			checkoutOptions = new CheckoutOptions(driver);
 			orderFinalizePOM = new OrderFinalizePOM(driver);
-		  		screenShot = new ScreenShot(driver); 
+		  	screenShot = new ScreenShot(driver); 
 		   	driver.get(baseUrl); 	
 		   	retailHomePOM.GotoLoginPage();
 		   	loginRegisterPOM.userDetails("Reshu123@gmail.com","reshu123");
 			loginRegisterPOM.clickLoginBtn();
 			myAccountPOM.validateConfirmationMsg();
-			//screenShot.captureScreenShot("MyAccountPage_RTTC_002");// open the browser
-	             //Mouseover on My Account icon 
-			
+					
 		}
 		
-		//@AfterMethod
-		//public void tearDown() throws Exception {
-			//driver.quit();
-		//}
+@AfterMethod
+public void tearDown() throws Exception {
+	  driver.quit();
+	 }
 	 
-	@Test
-	public void OrderTestWithLoginLogin() throws Exception
+
+//This method is to createOrder for user who is already logged in to application
+@Test 
+  public void OrderTestWithLoginLogin() throws Exception
 	{
 		confirmLoginPOM.GotoHomePage();
-		confirmLoginPOM.selectProduct();
+		retailHomePOM.selectProduct();
+		//confirmLoginPOM.selectProduct();
 		addToCartPOM.clickAddToCart();
-		//addToCartPOM.validateAlert();
+		
 		String quantity =addToCartPOM.getQuantity();
 		System.out.println(quantity);
 		String productName=addToCartPOM.getProductName();
 		String modelname=addToCartPOM.getModelName();
 		String unitPrice=addToCartPOM.getPrice();
 		String total=unitPrice;
-	 Thread.sleep(500);
 	 
-		addToCartPOM.clickShoppingCart();
-		//addToCartPOM.validateCart();
+	 	addToCartPOM.clickShoppingCart();
 		addToCartPOM.clickViewCart();
-		//shoppingCartPOM.validateModelName(modelname, productName, unitPrice, quantity, total);
+	
+		//below step is to validate shopping cart page
+		shoppingCartPOM.validateModelName(modelname, productName, unitPrice, quantity, total);
 		shoppingCartPOM.clickCheckOutBtn();
-		orderFinalizePOM.validateBillingPage();
+		
+		//below steps are to finalize Order
+
 		orderFinalizePOM.clickContinueBilling();
 		orderFinalizePOM.clickContinueDelivery();
 		orderFinalizePOM.clickContinueDeliveryMtd();
@@ -108,7 +110,7 @@ import com.training.pom.MyOrder;
 		orderFinalizePOM.clickContinuePayment();
 		orderFinalizePOM.clickOrderConfirmation();
 		orderConfirmationPOM.confirmOrder();		
-		screenShot.captureScreenShot("OrderCompletion");
+		screenShot.captureScreenShot("OrderCompletion_RTTC_033");
 			
 	}
 

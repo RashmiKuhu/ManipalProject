@@ -18,7 +18,7 @@ private WebDriver driver;
 
 //Locating required elements.
   
-@FindBy(xpath="//p[contains(text(),'Your order has been successfully processed!')]")
+@FindBy(xpath="//*[@id=\'System_mY98YHaM\']/div[1]/p[1]")
 private WebElement confirmMsg;
 
 @FindBy(xpath="//*[@id=\'Menu_Wmt3OMY3\']/nav/ul/li[2]/a/span")
@@ -31,8 +31,9 @@ private WebElement myOrders;
       public void confirmOrder() // checking confirmation message that order has been processed successfully.
          {
 	        String expectedCnfMsg="Your order has been successfully processed!";
-	         Assert.assertTrue(confirmMsg.getText().contains("successfully"));
-	        //Assert.assertEquals(confirmMsg.getText(), expectedCnfMsg);
+	       // String actualMsg=driver.getTitle();
+	       // Assert.assertTrue(actualMsg.contains("placed"));
+	        Assert.assertEquals(confirmMsg.getText(), expectedCnfMsg);
 	  			  
          }
 

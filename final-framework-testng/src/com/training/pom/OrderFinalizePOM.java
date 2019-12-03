@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class OrderFinalizePOM {
@@ -91,43 +93,6 @@ public void validateBillingPage()
 	String expectedDelivery="Step 2: Billing Details";
 	Assert.assertEquals(billingDetails.getText(), expectedDelivery);	
 }
-public void populateCustomerDetails(String fistName,String lastName,String eMail,String telePhone,String addressOne,String addressTwo,String city,String postCode,String country,String state)
-{
-	this.firstNamePmt.clear();
-	this.firstNamePmt.sendKeys(fistName);
-	
-		
-	this.lastNamePmt.clear();
-	this.lastNamePmt.sendKeys(lastName);
-	 
-	this.eMailPmt.clear();
-	this.eMailPmt.sendKeys(eMail);
-	
-	this.telephonePmt.clear();
-	this.telephonePmt.click();
-	this.telephonePmt.sendKeys(telePhone);
-	
-	this.addressOnePmt.clear();
-	this.addressOnePmt.sendKeys(addressOne);
-	
-	this.addressTwoPmt.clear();
-	this.addressTwoPmt.sendKeys(addressTwo);
-    
-	this.cityPmt.clear();
-	this.cityPmt.sendKeys(city);
-  
-	this.postcodePmt.clear();
-	this.postcodePmt.sendKeys(postCode);
-	
-	Select contryDropdown = new Select(this.countryPmt);
-	contryDropdown.selectByVisibleText(country);
-	
-	Select stateDropdown = new Select(this.statePmt);
-	stateDropdown.selectByVisibleText(state);
-     this.shippingAddress.click();
-	 Assert.assertTrue(shippingAddress.isSelected());
-	 
-}
 
 public void clickContinueBilling()
 {
@@ -165,6 +130,8 @@ public void clickContinueDeliveryMtd()
 
 public void clickAgreeCheck()
 {
+	WebDriverWait wait = new WebDriverWait(driver, 2000);
+    wait.until(ExpectedConditions.visibilityOf(agreeCheck));
 	 agreeCheck.isEnabled();       //checking if terms and condition check box is enabled
      agreeCheck.click();	
      Assert.assertTrue(agreeCheck.isSelected());

@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 
@@ -53,7 +55,8 @@ private WebElement logout;
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		 js.executeScript("window.scrollBy(0,1000)");
-		 
+		 WebDriverWait wait = new WebDriverWait(driver, 2000);
+		 wait.until(ExpectedConditions.visibilityOf(NamSedProd));			 
 		 NamSedProd.isEnabled();
 		 NamSedProd.click();
 		
