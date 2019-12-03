@@ -66,7 +66,7 @@ private WebDriver driver;
 	
 	
 	//Below method is to Populate User details for registerting user
-	public void populateUser(String firstName,String lastName,String eMail,String telephone,String addressOne,String addressTwo,String city,String poctCode,String country,String state) throws Exception
+	public void populateUser(String firstName,String lastName,String eMail,String telephone,String addressOne,String addressTwo,String city,String poctCode,String country,String state,String passWord,String confirmPassWord) throws Exception
 	{
 		this.firstName.clear();
 		this.firstName.sendKeys(firstName);
@@ -101,10 +101,10 @@ private WebDriver driver;
 		stateDropdown.selectByVisibleText(state);
 	   
 		this.password.clear();
-		this.password.sendKeys("Test123");
+		this.password.sendKeys(passWord);
 		
 		this.passwordConfirm.clear();
-		this.passwordConfirm.sendKeys("Test123");
+		this.passwordConfirm.sendKeys(confirmPassWord);
 		
      	this.subscribe.isEnabled();
 	    this.subscribe.click();
@@ -119,9 +119,6 @@ private WebDriver driver;
 	}
 	
 
-	
-	
-	
 	
 	
 

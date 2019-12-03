@@ -38,7 +38,7 @@ private static Properties properties;
 private ScreenShot screenShot;
 	
 
-	@BeforeClass
+@BeforeClass
 	public static void setUpBeforeClass() throws IOException {
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
@@ -46,8 +46,7 @@ private ScreenShot screenShot;
 		 
 	}
 	
-	@BeforeMethod
-
+@BeforeMethod
 	public void setUp() throws Exception {
     	driver = DriverFactory.getDriver(DriverNames.CHROME);
 		baseUrl = properties.getProperty("baseURL");
@@ -55,39 +54,41 @@ private ScreenShot screenShot;
 		addToCartPOM = new AddToCartPOM(driver);
 		shoppingCartPOM=new ShoppingCartPOM(driver);
 		checkoutOptions = new CheckoutOptions(driver);
-	  		screenShot = new ScreenShot(driver); 
-	   	driver.get(baseUrl); 	// open the browser
-             //Mouseover on My Account icon 
-		
-	}
+	  	screenShot = new ScreenShot(driver); 
+	   	driver.get(baseUrl); 	
+           
+		}
 	
-	//@AfterMethod
-	//public void tearDown() throws Exception {
-		//driver.quit();
-	//}
+	
+@AfterMethod
+	public void tearDown() throws Exception {
+	driver.quit();
+	}
  
+// RTTC_032 this test case it to verify whether application displays Login screen upon checking out the product without Pre Logging in
+	
 @Test
 public void OrderTestwithoutLogin() throws Exception
 {
 	retailHomePOM.selectProduct();
 	addToCartPOM.clickAddToCart();
-	//addToCartPOM.validateAlert();
+    
+	// storing values retreived from Add To Cart page.
+	
 	String quantity =addToCartPOM.getQuantity();
-	System.out.println(quantity);
 	String productName=addToCartPOM.getProductName();
 	String modelname=addToCartPOM.getModelName();
 	String unitPrice=addToCartPOM.getPrice();
 	String total=unitPrice;
- Thread.sleep(500);
- 
-	addToCartPOM.clickShoppingCart();
-	//addToCartPOM.validateCart();
-	addToCartPOM.clickViewCart();
-	//shoppingCartPOM.validateModelName(modelname, productName, unitPrice, quantity, total);
-	shoppingCartPOM.clickCheckOutBtn();
 	
-	checkoutOptions.validateLoginPage();
-	screenShot.captureScreenShot("LoginPage");
+	addToCartPOM.clickShoppingCart(); 
+	addToCartPOM.clickViewCart();
+	
+	// validate shopping cart 
+	shoppingCartPOM.validateModelName(modelname, productName, unitPrice, quantity, total); //Validating data in shopping cart with Add to cart page.
+	shoppingCartPOM.clickCheckOutBtn();
+	checkoutOptions.validateLoginPage();   // 
+	screenShot.captureScreenShot("Medium_Order_RTTC_032");
 		
 }
 

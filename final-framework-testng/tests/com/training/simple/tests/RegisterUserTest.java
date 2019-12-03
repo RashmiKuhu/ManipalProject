@@ -62,9 +62,9 @@ private ConfirmLoginPOM confirmLoginPOM;
 	
    // This test case is to RegisterUser test register User with given below details.
 	@Test
-	public void RegisterUserTest(String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state ) throws Exception
+	public void RegisterUserTest(String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state,String password,String confirmPassword ) throws Exception
 	{
-		registeUserPOM.populateUser(firstName,lastName,eMail,telephone,address,extraAddress,city,postCode,country,state);
+		registeUserPOM.populateUser(firstName,lastName,eMail,telephone,address,extraAddress,city,postCode,country,state,password,confirmPassword);
 		confirmLoginPOM.validateConfirmationMsg();
 	    screenShot.captureScreenShot("AccountCreated_RTTC_001");
 	

@@ -61,7 +61,7 @@ private ScreenShot screenShot;
 	}
 	
 
-//This test case is to Login into application with provided user id and password
+//This test case is to Login into application with provided user id and password in the excel sheet
 @Test (dataProvider = "xls-Login", dataProviderClass = LoginDataProviders.class)
 	public void validateUserLoginTest(String eMail,String password,String msg)
 	{  

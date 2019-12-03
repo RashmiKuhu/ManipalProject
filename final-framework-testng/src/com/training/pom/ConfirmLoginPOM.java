@@ -3,6 +3,7 @@ package com.training.pom;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -11,6 +12,7 @@ import org.testng.Assert;
 public class ConfirmLoginPOM {
 
 private WebDriver driver; 
+private Actions accountSelect;
 	
 	public ConfirmLoginPOM(WebDriver driver) {
 		this.driver = driver; 
@@ -26,6 +28,12 @@ private WebElement homeLnk;
 	
 @FindBy(linkText="Nam sed")
 private WebElement NamSedProd;
+
+@FindBy(xpath="//*[@id=\'Menu_Wmt3OMY3\']/nav/ul/li[2]/a/span/span")
+private WebElement account;
+
+@FindBy(xpath="//span[contains(text(),'LOGOUT')]")
+private WebElement logout;
 	
 	public void validateConfirmationMsg() //this method is to validate the confirmation message for account creation
 	{
@@ -45,10 +53,21 @@ private WebElement NamSedProd;
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		 js.executeScript("window.scrollBy(0,1000)");
+		 
 		 NamSedProd.isEnabled();
 		 NamSedProd.click();
 		
 	}
 	
-}
+	public void logout()
+	{
+			accountSelect=new Actions(driver);
+			accountSelect.moveToElement(account).build().perform();
+			logout.click();
+		}
+		//span[contains(text(),'LOGOUT')]
+	}
+	
+	
+	
 
