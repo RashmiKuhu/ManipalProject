@@ -55,12 +55,12 @@ public void setUp() throws Exception {
 		
 	}
 
-//@AfterMethod
+@AfterMethod
 	
-  //  public void tearDown() throws Exception {
-	//Thread.sleep(1000);
-	//driver.quit();
-	//}
+ public void tearDown() throws Exception {
+
+driver.quit();
+}
 	
 
 //This test case is to validate Forgot Password functionality

@@ -2,33 +2,24 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="95188" started-at="2019-12-03T23:00:49 IST" finished-at="2019-12-03T23:02:24 IST">
+  <suite name="Default suite" duration-ms="1163655" started-at="2019-12-03T23:06:35 IST" finished-at="2019-12-03T23:25:59 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="95188" started-at="2019-12-03T23:00:49 IST" finished-at="2019-12-03T23:02:24 IST">
+    <test name="Default test" duration-ms="1163655" started-at="2019-12-03T23:06:35 IST" finished-at="2019-12-03T23:25:59 IST">
       <class name="com.training.medium.tests.RTTC033CheckoutWithLoginTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@79be0360]" name="setUpBeforeClass" is-config="true" duration-ms="22" started-at="2019-12-03T23:00:49 IST" finished-at="2019-12-03T23:00:49 IST">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@79be0360]" name="setUpBeforeClass" is-config="true" duration-ms="18" started-at="2019-12-03T23:06:35 IST" finished-at="2019-12-03T23:06:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@79be0360]" name="setUp" is-config="true" duration-ms="31955" started-at="2019-12-03T23:00:49 IST" finished-at="2019-12-03T23:01:21 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@79be0360]" name="setUp" is-config="true" duration-ms="29485" started-at="2019-12-03T23:06:35 IST" finished-at="2019-12-03T23:07:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="OrderTestWithLoginLogin()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@79be0360]" name="OrderTestWithLoginLogin" duration-ms="26543" started-at="2019-12-03T23:01:21 IST" finished-at="2019-12-03T23:01:48 IST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Rs.666] but found [Rs.1,998]]]>
-            </message>
+        <test-method status="FAIL" signature="OrderTestWithLoginLogin()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@79be0360]" name="OrderTestWithLoginLogin" duration-ms="35049" started-at="2019-12-03T23:07:05 IST" finished-at="2019-12-03T23:07:40 IST">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Rs.666] but found [Rs.1,998]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:575)
-at org.testng.Assert.assertEquals(Assert.java:585)
-at com.training.pom.ShoppingCartPOM.validateModelName(ShoppingCartPOM.java:62)
-at com.training.medium.tests.RTTC033CheckoutWithLoginTest.OrderTestWithLoginLogin(RTTC033CheckoutWithLoginTest.java:101)
+              <![CDATA[java.lang.NullPointerException
+at com.training.medium.tests.RTTC033CheckoutWithLoginTest.OrderTestWithLoginLogin(RTTC033CheckoutWithLoginTest.java:112)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -59,52 +50,26 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderTestWithLoginLogin -->
-        <test-method status="FAIL" signature="OrderTestWithLoginLogin()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@79be0360]" name="OrderTestWithLoginLogin" is-config="true" duration-ms="36599" started-at="2019-12-03T23:01:48 IST" finished-at="2019-12-03T23:02:24 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='button-cart']"}
-  (Session info: chrome=78.0.3904.108)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-G9U9536', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir16884_218746757}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60697}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 35d6c03a1a3a8b2ecfd3601d5699105a
-*** Element info: {Using=xpath, value=//button[@id='button-cart']}]]>
-            </message>
+        <test-method status="FAIL" signature="OrderTestWithLoginLogin()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@79be0360]" name="OrderTestWithLoginLogin" is-config="true" duration-ms="1098808" started-at="2019-12-03T23:07:40 IST" finished-at="2019-12-03T23:25:59 IST">
+          <exception class="java.lang.NullPointerException">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='button-cart']"}
-  (Session info: chrome=78.0.3904.108)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-G9U9536', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir16884_218746757}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:60697}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 35d6c03a1a3a8b2ecfd3601d5699105a
-*** Element info: {Using=xpath, value=//button[@id='button-cart']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.training.pom.AddToCartPOM.clickAddToCart(AddToCartPOM.java:65)
-at com.training.medium.tests.RTTC033CheckoutWithLoginTest.OrderTestWithLoginLogin(RTTC033CheckoutWithLoginTest.java:88)
+              <![CDATA[java.lang.NullPointerException
+at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+at com.training.pom.RetailHomePOM.selectProduct(RetailHomePOM.java:38)
+at com.training.medium.tests.RTTC033CheckoutWithLoginTest.OrderTestWithLoginLogin(RTTC033CheckoutWithLoginTest.java:86)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -140,7 +105,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderTestWithLoginLogin -->

@@ -81,6 +81,12 @@ public void setUp() throws Exception {
 			
 }
 		
+@AfterMethod
+
+   public void tearDown() throws Exception {
+
+     driver.quit();
+   }
  
  @Test 
    public void ValidateOrder() //This test case is to validate Order history 
