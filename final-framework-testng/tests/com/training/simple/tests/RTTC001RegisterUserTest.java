@@ -19,7 +19,7 @@ import com.training.pom.RegisterUserPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class RegisterUserTest {
+public class RTTC001RegisterUserTest {
 	
 private WebDriver driver;
 private String baseUrl;

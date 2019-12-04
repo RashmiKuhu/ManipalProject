@@ -1,4 +1,4 @@
-package com.training.simple.tests;
+package com.training.others.tests;
 import com.training.pom.RetailHomePOM;
 import com.training.pom.ConfirmLoginPOM;
 import java.io.FileInputStream;

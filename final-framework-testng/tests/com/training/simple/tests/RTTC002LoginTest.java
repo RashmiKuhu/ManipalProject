@@ -22,7 +22,7 @@ import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
 
-public class LoginTest {
+public class RTTC002LoginTest {
 
 private WebDriver driver;
 private String baseUrl;

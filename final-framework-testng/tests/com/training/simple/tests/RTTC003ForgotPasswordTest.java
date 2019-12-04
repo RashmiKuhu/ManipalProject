@@ -22,7 +22,7 @@ import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
 
-public class ForgotPasswordTest {
+public class RTTC003ForgotPasswordTest {
 
 private WebDriver driver;
 private String baseUrl;

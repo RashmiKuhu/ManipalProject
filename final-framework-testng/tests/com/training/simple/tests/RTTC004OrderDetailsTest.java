@@ -25,7 +25,7 @@ import com.training.pom.ConfirmLoginPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class OrderDetailsTest {
+public class RTTC004OrderDetailsTest {
 		
 private WebDriver driver;
 private String baseUrl;
