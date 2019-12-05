@@ -15,7 +15,9 @@ import com.training.readexcel.ReadExcel;
 
 public class LoginDataProviders {
 
-	
+private  Properties properties;
+
+
  	@DataProvider(name = "db-inputs")
 	public Object [][] getDBData() {
 
@@ -70,23 +72,28 @@ public class LoginDataProviders {
 		Properties properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
-		String xlsFile =properties.getProperty("excelfile1");
-		String  xlssheet =properties.getProperty("sheet1");
 		// ensure you will have the title as first line in the file 
-		//return new ReadExcel().getExcelData("C:\\Users\\RASHMISINGH\\Desktop\\Reskill (selenium +API)\\RegisterNewUser.xls", "DataSheet");
-		return new ReadExcel().getExcelData(xlsFile, xlssheet); 
+		
+		return new ReadExcel().getExcelData(properties.getProperty("excelfile1"), properties.getProperty("sheet1")); 
 	}
 	
-	@DataProvider(name = "xls-Loginnew")
+	@DataProvider(name = "addCategory")
 	public  Object[][] getXLSDataLogintest() throws IOException{
 
-		Properties properties = new Properties();
+		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
 		properties.load(inStream);
-		String xlsFile =properties.getProperty("excelfile1");
-		String  xlssheet =properties.getProperty("sheet1");
 		// ensure you will have the title as first line in the file 
-		//return new ReadExcel().getExcelData("C:\\Users\\RASHMISINGH\\Desktop\\Reskill (selenium +API)\\RegisterNewUser.xls", "DataSheet");
-		return new ReadExcel().getExcelData(xlsFile, xlssheet); 
+		return new ReadExcel().getExcelData(properties.getProperty("excelfile1"), properties.getProperty("sheet3")); 
+	}
+	
+	@DataProvider(name = "invalidUser")
+	public  Object[][] getXLSDataLogintest() throws IOException{
+
+		properties = new Properties();
+		FileInputStream inStream = new FileInputStream("./resources/others.properties");
+		properties.load(inStream);
+		// ensure you will have the title as first line in the file 
+		return new ReadExcel().getExcelData(properties.getProperty("excelfile1"), properties.getProperty("sheet4")); 
 	}
 }
