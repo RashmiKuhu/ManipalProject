@@ -64,7 +64,7 @@ driver.quit();
 	
 
 //This test case is to validate Forgot Password functionality
-@Test
+@Test (groups= {"simple"})
 	public void ForgotPasswordTest()
 		{
 		loginRegisterPOM.userDetails("Reshu123@gmail.com","ertyuu");

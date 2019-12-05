@@ -1,9 +1,14 @@
 package com.training.pom;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class ErrorRegisterUserPOM {
 
@@ -38,6 +43,25 @@ private WebElement errorState;
 
 @FindBy(xpath="//*[@id=\'System_nyHsmShk\']/form/fieldset[3]/div[1]/div/div")
 private WebElement errorPassword;
+
+public void validateErrorMsg()
+{
+	
+	
+	//
+	// WebDriverWait wait = new WebDriverWait(driver, 2000);
+	 //wait.until(ExpectedConditions.alertIsPresent());
+  //Alert alert= driver.switchTo().alert();
+
+  //String expectedMsg=alert.getText();
+  
+  //alert.accept();
+  
+  //Assert.assertTrue(expectedMsg.contains("Please"));
+  
+}
+
+
 
 
 

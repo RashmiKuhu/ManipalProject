@@ -87,9 +87,9 @@ public void tearDown() throws Exception {
 
 // This test case is to RegisterUser test register User with given below details.
 @Test(dataProvider = "xls-inputs", dataProviderClass = LoginDataProviders.class)
-public void RegisterUserTest(String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state,String password,String confirmPassword  ) throws Exception
+public void RegisterUserTest(int rowNumber, String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state,String password,String confirmPassword  ) throws Exception
 		{
-			registeUserPOM.populateUser(firstName,lastName,eMail,telephone,address,extraAddress,city,postCode,country,state,password,confirmPassword);
+			registeUserPOM.populateUser(rowNumber,firstName,lastName,eMail,telephone,address,extraAddress,city,postCode,country,state,password,confirmPassword);
 			confirmLoginPOM.validateConfirmationMsg();
 		    confirmLoginPOM.logout();
 		    driver.get(adminUrl);

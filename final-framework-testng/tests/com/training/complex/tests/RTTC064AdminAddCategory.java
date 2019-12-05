@@ -82,7 +82,6 @@ public void addCategory(String CategoryName,String Description,String MetaTagTit
 	adminLoginPOM.validateLoginPage();
 }
 
-
 }
 	
 

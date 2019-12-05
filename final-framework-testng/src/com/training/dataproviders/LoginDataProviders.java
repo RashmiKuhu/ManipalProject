@@ -88,7 +88,7 @@ private  Properties properties;
 	}
 	
 	@DataProvider(name = "invalidUser")
-	public  Object[][] getXLSDataLogintest() throws IOException{
+	public  Object[][] getXLSDataInvalidUser() throws IOException{
 
 		properties = new Properties();
 		FileInputStream inStream = new FileInputStream("./resources/others.properties");
@@ -96,4 +96,6 @@ private  Properties properties;
 		// ensure you will have the title as first line in the file 
 		return new ReadExcel().getExcelData(properties.getProperty("excelfile1"), properties.getProperty("sheet4")); 
 	}
+	
+	
 }

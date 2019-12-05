@@ -92,11 +92,11 @@ public void tearDown() throws Exception {
 // This test case is to RegisterUser test register User with given below details.
 @Test(dataProvider = "xls-newuser", dataProviderClass = LoginDataProviders.class)
 	
-public void RegisterUserTest(String FirstName,String LastName,String eMail,String Telephone,String Address,String ExtraAddress,String City,String PostCode,String Country,String Region,String Password,String ConfirmPassword) throws Exception
+public void RegisterUserTest(int rowNumber,String FirstName,String LastName,String eMail,String Telephone,String Address,String ExtraAddress,String City,String PostCode,String Country,String Region,String Password,String ConfirmPassword) throws Exception
 		{
 			retailHomePOM.GotoLoginPage();     //Mouseover on My Account icon 
 			loginRegisterPOM.clickRegisterBtn();
-			registeUserPOM.populateUser(FirstName,LastName,eMail,Telephone,Address,ExtraAddress,City,PostCode,Country,Region,Password,ConfirmPassword);
+			registeUserPOM.populateUser(rowNumber,FirstName,LastName,eMail,Telephone,Address,ExtraAddress,City,PostCode,Country,Region,Password,ConfirmPassword);
 			confirmLoginPOM.validateConfirmationMsg();
 			  screenShot.captureScreenShot("AccountCreated_RTTC_001");
 			  confirmLoginPOM.logout();

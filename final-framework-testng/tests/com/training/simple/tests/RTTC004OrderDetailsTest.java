@@ -88,11 +88,9 @@ public void setUp() throws Exception {
      driver.quit();
    }
  
- @Test 
+ @Test (groups= {"simple"})
    public void ValidateOrder() //This test case is to validate Order history 
-
-  
- {
+  {
 	 orderConfirmationPOM.GotoMyOrders();
 	 screenShot.captureScreenShot("OrderHistory1_RTTC_004");
 	 myOrder.copyOrderId();
