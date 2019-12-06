@@ -40,9 +40,8 @@ private ScreenShot screenShot;
 		 
 	}
 	
-@BeforeMethod
-
-	public void setUp() throws Exception {
+@BeforeMethod   //initializing 
+public void setUp() throws Exception {
 	        driver = DriverFactory.getDriver(DriverNames.CHROME);
 			baseUrl = properties.getProperty("baseURL");
 			userName= properties.getProperty("username");
@@ -60,22 +59,22 @@ private ScreenShot screenShot;
 	
 @AfterMethod
 	
-	public void tearDown() throws Exception {
+public void tearDown() throws Exception {
 	
 	 driver.quit();
 	}
 	
 
 //This test case is to Login into application with provided user id and password
-@Test (groups= {"simple"})
+@Test 
 	public void UserLoginTest()
 	{
-		loginRegisterPOM.userDetails(userName,passWord);
+		loginRegisterPOM.userDetails(userName,passWord);  
 		loginRegisterPOM.clickLoginBtn();
 		myAccountPOM.validateConfirmationMsg();
 		screenShot.captureScreenShot("MyAccountPage_RTTC_002");
 		confirmLoginPOM.logout();
-		logoutPOM.validateLogoutMsg();
+		
 		}
 		
 }

@@ -81,9 +81,7 @@ private WebElement viewCart;
    
    public void clickCheckOut()  //this method  is to click on the checkout button. 
    {   
-	  Actions cartSelect=new Actions(driver);
-	  cartSelect.moveToElement(shoppingCart).build().perform();
-	  checkoutBtn.click();
+	  	  checkoutBtn.click();
    }
   
    public String getProductName()      //This method to return product name

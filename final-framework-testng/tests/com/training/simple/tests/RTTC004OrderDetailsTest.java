@@ -16,6 +16,8 @@ import com.training.generics.ScreenShot;
 import com.training.pom.RetailHomePOM;
 import com.training.pom.AddToCartPOM;
 import com.training.pom.LoginRegisterPOM;
+import com.training.pom.LogoutPOM;
+import com.training.pom.MyAccountPOM;
 import com.training.pom.MyOrder;
 import com.training.pom.OrderConfirmationPOM;
 import com.training.pom.OrderFinalizePOM;
@@ -31,7 +33,7 @@ private WebDriver driver;
 private String baseUrl;
 private RetailHomePOM retailHomePOM;
 private LoginRegisterPOM loginRegisterPOM;
-private RegisterUserPOM registeUserPOM;
+private MyAccountPOM myAccountPOM;
 private ConfirmLoginPOM confirmLoginPOM;
 private AddToCartPOM addToCart;
 private OrderFinalizePOM orderFinalizePOM;
@@ -41,6 +43,8 @@ private OrderHistory orderHistory;
 private String customerName;
 private static Properties properties;
 private ScreenShot screenShot;
+private String userName;
+private String passWord;
 		
 
 @BeforeClass
@@ -55,10 +59,11 @@ public static void setUpBeforeClass() throws IOException {
 public void setUp() throws Exception {
 	driver = DriverFactory.getDriver(DriverNames.CHROME);
 	baseUrl = properties.getProperty("baseURL");
+	userName= properties.getProperty("username");
+	passWord=properties.getProperty("password");
 	retailHomePOM = new RetailHomePOM(driver);
 	loginRegisterPOM = new LoginRegisterPOM(driver);
-	registeUserPOM = new RegisterUserPOM(driver);
-	confirmLoginPOM = new ConfirmLoginPOM(driver);
+	myAccountPOM= new MyAccountPOM(driver);
 	addToCart = new AddToCartPOM(driver);
 	orderFinalizePOM = new OrderFinalizePOM(driver);
 	orderConfirmationPOM = new OrderConfirmationPOM(driver);
@@ -69,34 +74,37 @@ public void setUp() throws Exception {
   
 // Below steps are to Navigate to Account and go to Login/Register Page ,Registering user with provided value, Going to Home page and selecting the product , Add the product to Cart and then place Order.				
 	 retailHomePOM.GotoLoginPage();
-	 loginRegisterPOM.clickRegisterBtn();
-	 registeUserPOM.populateUserinput("Kuhu1", "Singh", "kuhu12@gmail.com", "2345676709","kadugodi", "Kannamangala", "bangalore","560067","India","Karnataka");
-	 confirmLoginPOM.validateConfirmationMsg();
-	 confirmLoginPOM.GotoHomePage();
-	 confirmLoginPOM.selectProduct();
+	 loginRegisterPOM.userDetails(userName,passWord);  
+	 loginRegisterPOM.clickLoginBtn();
+	 myAccountPOM.validateConfirmationMsg();
+	 
+	 //below steps are to create order for customer who has already logged in
+	 myAccountPOM.GotoHomePage();
+	 retailHomePOM.selectProduct();
 	 addToCart.clickAddToCart();
+	 addToCart.clickShoppingCart();
 	 addToCart.clickCheckOut();
 	 orderFinalizePOM.finalizeOrder();
 	 orderConfirmationPOM.confirmOrder();
 			
 }
 		
-@AfterMethod
+//@AfterMethod
 
-   public void tearDown() throws Exception {
+  // public void tearDown() throws Exception {
 
-     driver.quit();
-   }
+    // driver.quit();
+   //}
  
  @Test (groups= {"simple"})
    public void ValidateOrder() //This test case is to validate Order history 
   {
 	 orderConfirmationPOM.GotoMyOrders();
-	 screenShot.captureScreenShot("OrderHistory1_RTTC_004");
+	 screenShot.captureScreenShot("OrderHistory1_RTTC_004_1");
 	 myOrder.copyOrderId();
 	 myOrder.checkStatus();
 	 myOrder.clickViewIcon();
-	 screenShot.captureScreenShot("OrderHistory2_RTTC_004");
+	 screenShot.captureScreenShot("OrderHistory2_RTTC_004_2");
 	 orderHistory.validateOrderHistory();
 	 	 
  }

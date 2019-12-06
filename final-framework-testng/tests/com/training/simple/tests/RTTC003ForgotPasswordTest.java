@@ -21,7 +21,6 @@ import com.training.pom.RegisterUserPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-
 public class RTTC003ForgotPasswordTest {
 
 private WebDriver driver;
@@ -51,8 +50,7 @@ public void setUp() throws Exception {
 	    screenShot = new ScreenShot(driver); 
  		driver.get(baseUrl); 	// open the browser
    		retailHomePOM.GotoLoginPage();
-     		
-		
+     			
 	}
 
 @AfterMethod
@@ -64,14 +62,14 @@ driver.quit();
 	
 
 //This test case is to validate Forgot Password functionality
-@Test (groups= {"simple"})
+@Test
 	public void ForgotPasswordTest()
 		{
 		loginRegisterPOM.userDetails("Reshu123@gmail.com","ertyuu");
 		loginRegisterPOM.clickLoginBtn();
-		loginRegisterPOM.validateWarningInvalidPassword("Warning: No match for E-Mail Address and/or Password.");
+		loginRegisterPOM.validateWarningInvalidPassword("Warning: No match for E-Mail Address and/or Password."); 
 		screenShot.captureScreenShot("WarningMsgRTTC_003");
-		loginRegisterPOM.clickForgotPasswordLnk();
+		loginRegisterPOM.clickForgotPasswordLnk();         //clicking on the forgot password 
 		forgotPasswordPOM.PopulateEmail("Reshu123@gmail.com");
 		forgotPasswordPOM.clickContinueBtn();
 		loginRegisterPOM.validateConfirmationMsg();

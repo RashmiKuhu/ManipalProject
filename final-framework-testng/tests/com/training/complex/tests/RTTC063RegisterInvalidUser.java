@@ -72,16 +72,13 @@ public class RTTC063RegisterInvalidUser {
 	    
 		}
 
-
-
 // This test case is to RegisterUser test register User with given below details.
 @Test(dataProvider = "invalidUser", dataProviderClass = LoginDataProviders.class)
-	public void RegisterUserTest(int rowNumber,String FirstName,String LastName,String eMail,String Telephone,String Address,String ExtraAddress,String City,String PostCode,String Country,String Region,String Password,String ConfirmPassword) throws Exception
+	public void RegisterUserTest(String rowNumber,String FirstName,String LastName,String eMail,String Telephone,String Address,String ExtraAddress,String City,String PostCode,String Country,String Region,String Password,String ConfirmPassword) throws Exception
 			{
 				registeUserPOM.populateUser(rowNumber,FirstName,LastName,eMail,Telephone,Address,ExtraAddress,City,PostCode,Country,Region,Password,ConfirmPassword);
-				screenShot.captureScreenShot("AccountCreated_RTTC_063"+"_"+rowNumber);
-				
-			    
+				screenShot.captureScreenShot("AccountCreated_RTTC_063"+"_"+rowNumber); //capturing screenshots 
+						    
 			    
 			}
 		

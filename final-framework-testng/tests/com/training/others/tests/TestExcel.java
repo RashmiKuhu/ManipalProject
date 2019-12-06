@@ -1,5 +1,6 @@
 package com.training.others.tests;
 import com.training.pom.RetailHomePOM;
+import com.training.readexcel.ReadExcel;
 import com.training.pom.ConfirmLoginPOM;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,6 +11,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.training.dataproviders.LoginDataProviders;
@@ -31,13 +33,17 @@ private RegisterUserPOM registeUserPOM;
 private ConfirmLoginPOM confirmLoginPOM;
 private static String fileName;
 private static String sheet;
+private LoginDataProviders data;
 
 @BeforeClass
 public static void setUpBeforeClass() throws IOException {
 	properties = new Properties();
 	FileInputStream inStream = new FileInputStream("./resources/others.properties");
 	properties.load(inStream);
-	 
+	fileName=properties.getProperty("./resources/RegisterNewUser.xls");
+	sheet=properties.getProperty("DataSheet");
+	
+			
 }
 
 @BeforeMethod
@@ -45,12 +51,13 @@ public static void setUpBeforeClass() throws IOException {
 public void setUp() throws Exception {
 	driver = DriverFactory.getDriver(DriverNames.CHROME);
 	baseUrl = properties.getProperty("baseURL");
-	String fileName ="C:\\\\Users\\\\RASHMISINGH\\\\git\\\\ManipalProject\\\\final-framework-testng\\\\resources\\\\RegisterNewUser.xls";
-	String sheet="DataSheet";
+   //fileName ="C:\\\\Users\\\\RASHMISINGH\\\\git\\\\ManipalProject\\final-framework-testng\\resources\\RegisterNewUser.xls";
+	 //sheet="DataSheet";
 	retailHomePOM = new RetailHomePOM(driver);
 	loginRegisterPOM = new LoginRegisterPOM(driver);
 	registeUserPOM = new RegisterUserPOM(driver);
 	confirmLoginPOM = new ConfirmLoginPOM(driver);
+	data = new LoginDataProviders();
 	screenShot = new ScreenShot(driver); 
    	driver.get(baseUrl); 	// open the browser
     retailHomePOM.GotoLoginPage();     //Mouseover on My Account icon 
@@ -58,33 +65,30 @@ public void setUp() throws Exception {
 }
 
 
-@AfterMethod
- public void tearDown() throws Exception {
-   Thread.sleep(1000);
-	driver.quit();
-   }
+//@AfterMethod
+ //public void tearDown() throws Exception {
+   //Thread.sleep(1000);
+	//driver.quit();
+   //}
 
-//@Test(dataProvider = "xls-inputs", dataProviderClass = LoginDataProviders.class)
+@Test(dataProvider = "test", dataProviderClass = LoginDataProviders.class)
 
-//public void RegisterUserTest(String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state,String password,String confirmPassword ) throws Exception
-//{
-	//registeUserPOM.populateUser(firstName,lastName,eMail,telephone,address,extraAddress,city,postCode,country,state,password,confirmPassword);
+public void RegisterUserTest(int rowNumber,String firstName,String lastName,String eMail,String mobileNumber,String address,String extraAddress,String city,String postCode,String country,String state,String password,String confirmPassword ) throws Exception
+{
+	data.getXLSDataInvalidUser(fileName, sheet);
 	
-	
-//	screenShot.captureScreenShot("Test1");
+	registeUserPOM.populateUser(rowNumber,firstName,lastName,eMail,mobileNumber,address,extraAddress,city,postCode,country,state,password,confirmPassword);
+		
+screenShot.captureScreenShot("Test1");
 		
 
 // confirmLoginPOM.validateConfirmationMsg();
 // screenShot.captureScreenShot("AccountCreated_RTTC_001");
 
 
-//}
+}
 
-@Test(dataProvider = "xls-Loginnew", dataProviderClass = LoginDataProviders.class(fileName,sheet))
+ 
 
-public void test()
-{
-	}
- 	
 
 }

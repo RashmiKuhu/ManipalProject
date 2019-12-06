@@ -20,8 +20,18 @@ public class MyAccountPOM {
 			}
 	
 
-	@FindBy(xpath="//h2[contains(text(),'My Account')]")
-	private WebElement messageAccountPage;
+@FindBy(xpath="//*[@id=\'System_nyHsmShk\']/align/h2")
+private WebElement messageAccountPage;
+	
+@FindBy(xpath="//span[contains(text(),'Home')]")	
+private WebElement homeLnk;	
+
+public void GotoHomePage() //This method is to go to home page
+	
+	{
+	homeLnk.click();
+		
+	}
 	
 	public void validateConfirmationMsg()  //This method is to validate that My Account page is displayed
 	{

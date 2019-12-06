@@ -1,6 +1,10 @@
 package com.training.simple.tests;
+
 import com.training.pom.RetailHomePOM;
+import com.training.pom.AdminDashBoardPOM;
+import com.training.pom.AdminLoginPOM;
 import com.training.pom.ConfirmLoginPOM;
+import com.training.pom.CustomerDetailsPOM;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -11,7 +15,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.training.dataproviders.LoginDataProviders;
 import com.training.generics.ScreenShot;
 import com.training.pom.LoginRegisterPOM;
@@ -23,12 +26,18 @@ public class RTTC001RegisterUserTest {
 	
 private WebDriver driver;
 private String baseUrl;
+private String adminUrl;
+private String adminId;
+private String adminPwd;
 private LoginRegisterPOM loginRegisterPOM;
 private RetailHomePOM retailHomePOM;
 private static Properties properties;
 private ScreenShot screenShot;
 private RegisterUserPOM registeUserPOM;
 private ConfirmLoginPOM confirmLoginPOM;
+private AdminLoginPOM adminLoginPOM;
+private AdminDashBoardPOM adminDashBoardPOM;
+private CustomerDetailsPOM customerDetailsPOM;
 	
 
 @BeforeClass
@@ -43,10 +52,16 @@ private ConfirmLoginPOM confirmLoginPOM;
 	public void setUp() throws Exception {
     	driver = DriverFactory.getDriver(DriverNames.CHROME);
 		baseUrl = properties.getProperty("baseURL");
+		adminUrl= properties.getProperty("adminURL");
+		adminId =  properties.getProperty("adminUsername");
+    	adminPwd = properties.getProperty("adminPassword");
 		retailHomePOM = new RetailHomePOM(driver);
 		loginRegisterPOM = new LoginRegisterPOM(driver);
 		registeUserPOM = new RegisterUserPOM(driver);
 		confirmLoginPOM = new ConfirmLoginPOM(driver);
+		adminLoginPOM = new AdminLoginPOM(driver);
+		adminDashBoardPOM= new AdminDashBoardPOM(driver);
+		customerDetailsPOM = new CustomerDetailsPOM(driver);
 		screenShot = new ScreenShot(driver); 
 	   	driver.get(baseUrl); 	// open the browser
         retailHomePOM.GotoLoginPage();     //Mouseover on My Account icon 
@@ -54,25 +69,37 @@ private ConfirmLoginPOM confirmLoginPOM;
 	}
  
 	
-	
-  @AfterMethod
-	 public void tearDown() throws Exception {
-	   		driver.quit();
+@AfterMethod
+public void cleanUp() throws Exception {
+ customerDetailsPOM .deleteCustomer();
+ customerDetailsPOM.logoutAdmin();
+ adminLoginPOM.validateLoginPage();
+ 
 	}
-	
-   // This test case is to RegisterUser test register User with given below details.
-@Test (groups= {"simple"} ,dataProvider = "xls-inputs", dataProviderClass = LoginDataProviders.class)
-	public void RegisterUserTest(int rowNumber,String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state,String password,String confirmPassword ) throws Exception
+		
+@AfterTest
+public void tearDown() throws Exception {
+	  
+driver.quit();
+}
+   // This test case is to RegisterUser test register User with given below details. 
+@Test (dataProvider = "xls-inputs", dataProviderClass = LoginDataProviders.class)
+	public void RegisterUserTest(String rowNumber,String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state,String password,String confirmPassword ) throws Exception
 	{
+	  // using dataProvider to provide value to the test case
 		registeUserPOM.populateUser(rowNumber,firstName,lastName,eMail,telephone,address,extraAddress,city,postCode,country,state,password,confirmPassword);
 		confirmLoginPOM.validateConfirmationMsg();
 	    screenShot.captureScreenShot("AccountCreated_RTTC_001"+"_"+rowNumber);
-	
+	    confirmLoginPOM.logout();
+	    driver.get(adminUrl);
+	    adminLoginPOM.loginToAdmin(adminId, adminPwd);
+	    adminDashBoardPOM.dashBoardVisible();
+	    adminDashBoardPOM.navigateToCustomers();
+	    customerDetailsPOM.validateCustomersPage();
+	    customerDetailsPOM.validateCustomerData(firstName,lastName,eMail,telephone,address,extraAddress,city,postCode,country,state,password,confirmPassword);
+	    screenShot.captureScreenShot("AccountCreated_RTTC_001"); 
 	}
 
-	
-	
-	
 	
 	
 	

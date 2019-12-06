@@ -91,7 +91,7 @@ private WebDriver driver;
 	
 	
 	//Below method is to Populate User details for registerting user
-	public void populateUser(int rowNumber,String firstName,String lastName,String eMail,String telephone,String addressOne,String addressTwo,String city,String poctCode,String country,String state,String passWord,String confirmPassWord) throws Exception
+	public void populateUser(String rowNumber,String firstName,String lastName,String eMail,String telephone,String addressOne,String addressTwo,String city,String poctCode,String country,String state,String passWord,String confirmPassWord) throws Exception
 	{
 		this.firstName.clear();
 		this.firstName.sendKeys(firstName);
@@ -164,8 +164,7 @@ private WebDriver driver;
 		   {
 			   String expErrorPass="Password must be between 4 and 20 characters!";
 				 Assert.assertEquals(errorPassword.getText(), expErrorPass);
-			
-				 
+							 
 		   } 
 			
 		

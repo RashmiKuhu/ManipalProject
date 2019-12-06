@@ -41,8 +41,7 @@ private ScreenShot screenShot;
 	}
 	
 @BeforeMethod
-
-	public void setUp() throws Exception {
+public void setUp() throws Exception { //initializing objects and variables
 	        driver = DriverFactory.getDriver(DriverNames.CHROME);
 			baseUrl = properties.getProperty("baseURL");
 			retailHomePOM = new RetailHomePOM(driver);
@@ -54,11 +53,10 @@ private ScreenShot screenShot;
 		}
 	
 @AfterMethod
-	
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
-	 driver.quit();
-	}
+	   driver.quit();
+	 }
 	
 
 //This test case is to Login into application with provided user id and password in the excel sheet
@@ -68,9 +66,9 @@ private ScreenShot screenShot;
 	
 	   loginRegisterPOM.LoginValidation(eMail, password, msg);
 	   loginRegisterPOM.clickLoginBtn();
-	   loginRegisterPOM.validateWarningInvalidPassword(msg);
+	   loginRegisterPOM.validateWarningInvalidPassword(msg);  //validating  error message
 	   screenShot.captureScreenShot("MyAccountPage_RTTC_002");
-		
+	   
 		}
 	
 	
