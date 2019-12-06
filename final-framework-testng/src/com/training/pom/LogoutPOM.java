@@ -19,6 +19,8 @@ private WebDriver driver;
 @FindBy(xpath="//p[contains(text(),'You have been logged off your account.)]")
 private WebElement logoutMsg;
 
+
+//This method is to validate logout page
 public void validateLogoutMsg()
 { 
 	String expectedMsg="You have been logged off your account. It is now safe to leave the computer.";

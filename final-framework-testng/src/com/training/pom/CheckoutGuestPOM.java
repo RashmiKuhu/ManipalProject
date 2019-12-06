@@ -1,9 +1,7 @@
 package com.training.pom;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.Keys;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -79,13 +77,12 @@ private WebElement orderConfirnmationGuest;
 private WebElement confirmOrderBtn;
 
 
-
+// This method is to add customer details for guest 
 public void populateCustomerDetails(String rowNumber,String fistName,String lastName,String eMail,String telePhone,String addressOne,String addressTwo,String city,String postCode,String country,String state,String password, String confirmPassword )
 {
 	this.firstNamePmt.clear();
 	this.firstNamePmt.sendKeys(fistName);
-	
-		
+			
 	this.lastNamePmt.clear();
 	this.lastNamePmt.sendKeys(lastName);
 	 
@@ -115,10 +112,10 @@ public void populateCustomerDetails(String rowNumber,String fistName,String last
 	stateDropdown.selectByVisibleText(state);
 }
 
- public void clickDeliverycheck()
- {  
-	 //shippingAddress.sendKeys(Keys.SPACE);
-      	 
+ 
+// This method is to click on shipping address check box
+public void clickDeliverycheck()
+ {       
 		
     Assert.assertTrue(shippingAddress.isSelected());
  

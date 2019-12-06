@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Complex Test]">
+  <test thread-count="5" name="Complex Test(failed)">
     <classes>
-      <class name="com.training.medium.tests.RTTC033CheckoutWithLoginTest">
+      <class name="com.training.complex.tests.RTTC062MultipleUserRegistrationTest">
         <methods>
-          <include name="OrderTestWithLoginLogin"/>
-          <include name="setUpBeforeClass"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="RegisterUserTest" invocation-numbers="3"/>
+          <include name="cleanUp"/>
+          <include name="setUpBeforeClass"/>
         </methods>
-      </class> <!-- com.training.medium.tests.RTTC033CheckoutWithLoginTest -->
+      </class> <!-- com.training.complex.tests.RTTC062MultipleUserRegistrationTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Complex Test(failed) -->
+</suite> <!-- Failed suite [Complex Test] -->

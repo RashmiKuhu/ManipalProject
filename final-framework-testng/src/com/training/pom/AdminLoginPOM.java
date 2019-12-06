@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class AdminLoginPOM {
@@ -31,6 +30,9 @@ private WebElement loginBtn;
 @FindBy(xpath="//h1[@class='panel-title']")
 private WebElement loginPage;
 
+
+//This method is to login to Admin URL
+
 public void loginToAdmin(String userName,String passWord)
 {
   this.userName.clear();
@@ -41,6 +43,8 @@ public void loginToAdmin(String userName,String passWord)
   
   loginBtn.click();
 }
+
+//This method is to validate login page
 
 public void validateLoginPage()
 {

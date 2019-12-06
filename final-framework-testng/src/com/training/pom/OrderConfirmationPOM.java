@@ -1,5 +1,5 @@
 package com.training.pom;
-import org.openqa.selenium.Alert;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -28,15 +28,15 @@ private WebElement account;
 private WebElement myOrders;
 
 
-      public void confirmOrder() // checking confirmation message that order has been processed successfully.
-         {
+public void confirmOrder() // checking confirmation message that order has been processed successfully.
+       {
     	  String expectedCnfMsg="Your order has been successfully processed!";
 
 	      Assert.assertEquals(confirmMsg.getText(), expectedCnfMsg);
 	    	  			  
          }
 
-      public void GotoMyOrders() //Mouseover on the Account icon and select My Orders from the list.
+public void GotoMyOrders() //Mouseover on the Account icon and select My Orders from the list.
         {
     	
     	   Actions accountSelect=new Actions(driver);

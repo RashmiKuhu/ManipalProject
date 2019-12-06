@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class CustomerDetailsPOM {
@@ -63,6 +62,8 @@ private WebElement successMsg;
 @FindBy(xpath="//*[@id=\'header\']/ul/li[4]/a/span")
 private WebElement logoutBtn;
 
+
+//This method is to validate customer details
 public void validateCustomersPage()
 {
   String expectedMsg="Customers";
@@ -70,6 +71,7 @@ public void validateCustomersPage()
   
 }
 
+//This method is to validate customer data
 public void validateCustomerData(String firstName,String lastName,String eMail,String telephone,String addressOne,String addressTwo,String city,String poctCode,String country,String state,String passWord,String confirmPassWord )
 {
    this.customerName.clear();
@@ -94,6 +96,7 @@ public void validateCustomerData(String firstName,String lastName,String eMail,S
       
 }
 
+//This method is to delete customer
  public void deleteCustomer()
  {
 	checkBox.isEnabled();

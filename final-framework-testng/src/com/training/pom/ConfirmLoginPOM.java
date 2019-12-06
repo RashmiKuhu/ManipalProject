@@ -62,13 +62,15 @@ private WebElement logout;
 		
 	}
 	
+	
+	// This method is to logout button
 	public void logout()
 	{
 			accountSelect=new Actions(driver);
 			accountSelect.moveToElement(account).build().perform();
 			logout.click();
 		}
-		//span[contains(text(),'LOGOUT')]
+		
 	}
 	
 	

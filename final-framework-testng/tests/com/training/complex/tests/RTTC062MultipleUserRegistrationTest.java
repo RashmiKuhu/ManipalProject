@@ -5,7 +5,6 @@ import com.training.pom.AdminDashBoardPOM;
 import com.training.pom.AdminLoginPOM;
 import com.training.pom.ConfirmLoginPOM;
 import com.training.pom.CustomerDetailsPOM;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -14,12 +13,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.training.dataproviders.LoginDataProviders;
 import com.training.generics.ScreenShot;
 import com.training.pom.LoginRegisterPOM;
-import com.training.pom.LogoutPOM;
 import com.training.pom.RegisterUserPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
@@ -37,7 +34,6 @@ private static Properties properties;
 private ScreenShot screenShot;
 private RegisterUserPOM registeUserPOM;
 private ConfirmLoginPOM confirmLoginPOM;
-private LogoutPOM logoutPOM;
 private AdminLoginPOM adminLoginPOM;
 private AdminDashBoardPOM adminDashBoardPOM;
 private CustomerDetailsPOM customerDetailsPOM;
@@ -52,7 +48,7 @@ private CustomerDetailsPOM customerDetailsPOM;
 			 
 		}
 		
-		@BeforeMethod
+@BeforeMethod 
 
 public void setUp() throws Exception {
 	    	driver = DriverFactory.getDriver(DriverNames.CHROME);
@@ -69,13 +65,13 @@ public void setUp() throws Exception {
 			customerDetailsPOM = new CustomerDetailsPOM(driver);
 			screenShot = new ScreenShot(driver); 
 		   	driver.get(baseUrl); 	// open the browser
-	         //click on the Register/Login button
+	     
 		}
 	 
 		
 		
-@AfterMethod
-		   public void cleanUp() throws Exception {
+@AfterMethod  // Steps in after method are to clean up application by deleting the customer created in test case
+	public void cleanUp() throws Exception {
 		    customerDetailsPOM .deleteCustomer();
 		    screenShot.captureScreenShot("Customer_RTTC_061");
 		    customerDetailsPOM.logoutAdmin();
@@ -92,24 +88,29 @@ public void tearDown() throws Exception {
 // This test case is to RegisterUser test register User with given below details.
 @Test(dataProvider = "xls-newuser", dataProviderClass = LoginDataProviders.class)
 	
-public void RegisterUserTest(int rowNumber,String FirstName,String LastName,String eMail,String Telephone,String Address,String ExtraAddress,String City,String PostCode,String Country,String Region,String Password,String ConfirmPassword) throws Exception
+public void RegisterUserTest(String rowNumber,String FirstName,String LastName,String eMail,String Telephone,String Address,String ExtraAddress,String City,String PostCode,String Country,String Region,String Password,String ConfirmPassword) throws Exception
 		{
 			retailHomePOM.GotoLoginPage();     //Mouseover on My Account icon 
 			loginRegisterPOM.clickRegisterBtn();
+			//Below step is to Register the user
 			registeUserPOM.populateUser(rowNumber,FirstName,LastName,eMail,Telephone,Address,ExtraAddress,City,PostCode,Country,Region,Password,ConfirmPassword);
 			confirmLoginPOM.validateConfirmationMsg();
-			  screenShot.captureScreenShot("AccountCreated_RTTC_001");
-			  confirmLoginPOM.logout();
-			   driver.get(adminUrl);
-			    adminLoginPOM.loginToAdmin(adminId, adminPwd);
-			    adminDashBoardPOM.dashBoardVisible();
-			    adminDashBoardPOM.navigateToCustomers();
-			    customerDetailsPOM.validateCustomersPage();
-			    customerDetailsPOM.validateCustomerData(FirstName,LastName,eMail,Telephone,Address,ExtraAddress,City,PostCode,Country,Region,Password,ConfirmPassword);
-			   
-						  
-      
-		}
+			screenShot.captureScreenShot("AccountCreated_RTTC_001");
+			confirmLoginPOM.logout();
+			
+			//below step is to open browser with Admin URL   
+			driver.get(adminUrl);
+			adminLoginPOM.loginToAdmin(adminId, adminPwd);
+			adminDashBoardPOM.dashBoardVisible();
+			
+			//Navigate to Customers page
+			adminDashBoardPOM.navigateToCustomers();
+			customerDetailsPOM.validateCustomersPage();
+			
+			//below step is to validate customer data from excel sheet
+			customerDetailsPOM.validateCustomerData(FirstName,LastName,eMail,Telephone,Address,ExtraAddress,City,PostCode,Country,Region,Password,ConfirmPassword);
+			
+		  }
          
 	
 		

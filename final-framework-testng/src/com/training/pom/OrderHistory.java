@@ -1,8 +1,6 @@
 package com.training.pom;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
@@ -17,7 +15,7 @@ private WebDriver driver;
 	}
     
    
-	public void validateOrderHistory()
+public void validateOrderHistory()
 	{
 		String expectedTitle="Order Information";
 		Assert.assertEquals(driver.getTitle(), expectedTitle);

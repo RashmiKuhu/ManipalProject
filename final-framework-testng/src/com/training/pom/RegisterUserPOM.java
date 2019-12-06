@@ -2,16 +2,17 @@ package com.training.pom;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class RegisterUserPOM {
 private WebDriver driver; 
 	
-	public RegisterUserPOM(WebDriver driver) {
+public RegisterUserPOM(WebDriver driver) {
 		this.driver = driver; 
 		PageFactory.initElements(driver, this);
 		
@@ -90,8 +91,8 @@ private WebDriver driver;
 	private WebElement errorPassword;
 	
 	
-	//Below method is to Populate User details for registerting user
-	public void populateUser(String rowNumber,String firstName,String lastName,String eMail,String telephone,String addressOne,String addressTwo,String city,String poctCode,String country,String state,String passWord,String confirmPassWord) throws Exception
+//Below method is to Populate User details for registerting user
+public void populateUser(String rowNumber,String firstName,String lastName,String eMail,String telephone,String addressOne,String addressTwo,String city,String poctCode,String country,String state,String passWord,String confirmPassWord) throws Exception
 	{
 		this.firstName.clear();
 		this.firstName.sendKeys(firstName);
@@ -138,7 +139,9 @@ private WebDriver driver;
 		
 		this.privacy.isEnabled();
 		this.privacy.click();
-			
+		
+		WebDriverWait wait = new WebDriverWait(driver, 2000);
+	    wait.until(ExpectedConditions.visibilityOf(continue_Btn));
 		this.continue_Btn.click();
 		
 		if(lastName.isEmpty())
@@ -168,65 +171,8 @@ private WebDriver driver;
 		   } 
 			
 		
-		
 	}
 	
-
-	
-public void populateUserinput(String firstName,String lastName,String eMail,String telephone,String addressOne,String addressTwo,String city,String poctCode,String country,String state) throws Exception
- {
-    this.firstName.clear();
-	this.firstName.sendKeys(firstName);
-					
-	this.lastName.clear();
-	this.lastName.sendKeys(lastName);
-		 
-	this.eMail.clear();
-	this.eMail.sendKeys(eMail);
-		
-	this.telephone.clear();
-	this.telephone.click();
-	this.telephone.sendKeys(telephone);
-		
-	this.addressOne.clear();
-	this.addressOne.sendKeys(addressOne);
-		
-	this.addressTwo.clear();
-	this.addressTwo.sendKeys(addressTwo);
-	    
-	this.city.clear();
-	this.city.sendKeys(city);
-	  
-	this.poctCode.clear();
-	this.poctCode.sendKeys(poctCode);
-		
-	Select contryDropdown = new Select(this.country);
-	contryDropdown.selectByVisibleText(country);
-		
-	Select stateDropdown = new Select(this.state);
-	stateDropdown.selectByVisibleText(state);
-	   
-	this.password.clear();
-	this.password.sendKeys("reshu123");
-		
-	this.passwordConfirm.clear();
-	this.passwordConfirm.sendKeys("reshu123");
-		
-    this.subscribe.isEnabled();
-	this.subscribe.click();
-	 
-	this.subscribeOne.click();
-		
-	this.privacy.isEnabled();
-	this.privacy.click();
-			
-	
-	this.continue_Btn.click();
-		
-	}
-
-
 }
 	
 
-//}

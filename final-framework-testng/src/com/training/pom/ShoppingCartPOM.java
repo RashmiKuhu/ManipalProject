@@ -34,11 +34,8 @@ private WebElement quantity;
 @FindBy(xpath="//*[@id=\"total\"]/tbody/tr[2]/td[2]")
 private WebElement totalFinal;
 
-//
-
 @FindBy(xpath="//*[@id=\"cart_form\"]/div/table/tbody/tr/td[5]")
 private WebElement unitPrice;
-
 
 @FindBy(xpath="//*[@id=\"cart_form\"]/div/table/tbody/tr/td[6]") 
 private WebElement total;

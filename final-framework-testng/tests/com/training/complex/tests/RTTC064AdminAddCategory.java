@@ -1,11 +1,9 @@
 package com.training.complex.tests;
 
-import com.training.pom.RetailHomePOM;
 import com.training.pom.AddCategoryPOM;
 import com.training.pom.AdminDashBoardPOM;
 import com.training.pom.AdminLoginPOM;
 import com.training.pom.CategoriesPOM;
-import com.training.pom.ConfirmLoginPOM;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -14,11 +12,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.training.dataproviders.LoginDataProviders;
 import com.training.generics.ScreenShot;
-import com.training.pom.LoginRegisterPOM;
-import com.training.pom.RegisterUserPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
@@ -44,7 +39,7 @@ private ScreenShot screenShot;
 			 
 		}
 
-@BeforeMethod
+@BeforeMethod //Initializing  
 		public void setUp() throws Exception {
 	    	driver = DriverFactory.getDriver(DriverNames.CHROME);
 	    	adminUrl = properties.getProperty("adminURL");
@@ -56,7 +51,8 @@ private ScreenShot screenShot;
 	    	addCategoryPOM = new AddCategoryPOM(driver);
 			screenShot = new ScreenShot(driver); 
 		   	driver.get(adminUrl); 	// open the browser
-	       	
+		   	
+	       	//Login in to Retail application  as admin 
 		   	adminLoginPOM.loginToAdmin(adminId, adminPwd);
 		   			   	
 		}
@@ -68,6 +64,7 @@ private ScreenShot screenShot;
 	   
 }
 
+//This test case is to add categories in the Retail application
 @Test(dataProvider = "addCategory", dataProviderClass = LoginDataProviders.class)
 public void addCategory(String CategoryName,String Description,String MetaTagTitle,String MetaTagDescription) throws Exception
 { 
@@ -76,7 +73,10 @@ public void addCategory(String CategoryName,String Description,String MetaTagTit
 	categoriesPOM.validatecategoryPage();
 	categoriesPOM.clickAddCategory();
 	addCategoryPOM.validatePageTitle();
+	
+	//Adding category details using input from excel
 	addCategoryPOM.addCategoryDetails(CategoryName, Description, MetaTagTitle, MetaTagDescription);
+	screenShot.captureScreenShot("Category Added");
 	categoriesPOM.validateCategoryAdded();
 	categoriesPOM.logoutAdmin();
 	adminLoginPOM.validateLoginPage();

@@ -21,27 +21,28 @@ public class RetailHomePOM {
 		
 		}
 	
-	@FindBy(xpath="//*[@id=\'Menu_Wmt3OMY3\']/nav/ul/li[2]/a/span")
-	private WebElement account; 
+@FindBy(xpath="//*[@id=\'Menu_Wmt3OMY3\']/nav/ul/li[2]/a/span")
+private WebElement account; 
 	
-	@FindBy(xpath="//*[@id=\'Menu_Wmt3OMY3\']/nav/ul/li[2]/ul/li[1]")
-	private WebElement loginRegister;
+@FindBy(xpath="//*[@id=\'Menu_Wmt3OMY3\']/nav/ul/li[2]/ul/li[1]")
+private WebElement loginRegister;
 	
-	@FindBy(linkText="Nam sed")
-	private WebElement productName;
+@FindBy(linkText="Nam sed")
+private WebElement productName;
 	
-	public void selectProduct() throws InterruptedException
+public void selectProduct() throws InterruptedException
 	{
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	 js.executeScript("window.scrollBy(0,1000)");
 	 WebDriverWait wait = new WebDriverWait(driver, 2000);
 	 wait.until(ExpectedConditions.visibilityOf(productName));
 		 
-	  productName.isEnabled();
+     productName.isEnabled();
 	 productName.click();
+	
 	}
 
-	public void GotoLoginPage() //this function is to Navigate to Login/Register page.
+public void GotoLoginPage() //this function is to Navigate to Login/Register page.
 	{    
 		accountSelect=new Actions(driver);
 		accountSelect.moveToElement(account).build().perform();

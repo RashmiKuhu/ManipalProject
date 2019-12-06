@@ -35,13 +35,15 @@ private WebElement metaTagDesc;
 @FindBy(xpath="//button[@class='btn btn-primary']")
 private WebElement saveBtn;
 
-
+//This method is to validate page title
 public void validatePageTitle()
 {
   String expectedTitle="Add Category";
   Assert.assertEquals(categoryPageTitle.getText(), expectedTitle);
   
 }
+
+//This method is to add category details using excel sheet
 
 public void addCategoryDetails(String name,String categoryDesc,String metaTag,String metaTagDesc)
 { 

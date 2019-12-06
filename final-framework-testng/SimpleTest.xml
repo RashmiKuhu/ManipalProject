@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name = "Simple Test">
+   <test name = "Sample test">
+      <classes>
+         <class name = "com.training.simple.tests.RTTC001RegisterUserTest" />
+         <class name = "com.training.simple.tests.RTTC002LoginTest" />
+         <class name = "com.training.simple.tests.RTTC003ForgotPasswordTest" />
+         <class name = "com.training.simple.tests.RTTC004OrderDetailsTest" />
+      </classes>
+   </test>
+</suite>	

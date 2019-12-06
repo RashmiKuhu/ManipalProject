@@ -25,7 +25,8 @@ private WebElement password;
 @FindBy(xpath="//*[@id=\"content\"]/div/div/div/div/div[2]/form/div[3]/button")
 private WebElement loginBtn; 
 	
-	public void sendUserName(String userName) {
+
+public void sendUserName(String userName) {
 		this.userName.clear();
 		this.userName.sendKeys(userName);
     	}

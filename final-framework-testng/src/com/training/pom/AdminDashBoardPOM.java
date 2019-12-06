@@ -36,12 +36,15 @@ private WebElement customerIcon;
 private WebElement customersLink;
 
 
+//This method is to check if dashboad is visible
 public void dashBoardVisible()
 {
   String expectedDashboard="Dashboard";
   Assert.assertEquals(dashboardVisible.getText(), expectedDashboard);
 		  
 }
+
+//This method is to navigate to category page
 
 public void navigateToCategories()
 {
@@ -52,6 +55,7 @@ public void navigateToCategories()
 	
 	}
 
+//This method is to navigate to Customer
 public void navigateToCustomers()
 {
 	customer= new Actions(driver);
@@ -59,3 +63,4 @@ public void navigateToCustomers()
 	customersLink.click();
 }
 }
+

@@ -71,7 +71,7 @@ public void setUp() throws Exception {
 	 
 		
 		
-@AfterMethod
+@AfterMethod //// Steps in after method are to clean up application by deleting the customer created in test case
    public void cleanUp() throws Exception {
     customerDetailsPOM .deleteCustomer();
     customerDetailsPOM.logoutAdmin();
@@ -89,14 +89,21 @@ public void tearDown() throws Exception {
 @Test(dataProvider = "xls-inputs", dataProviderClass = LoginDataProviders.class)
 public void RegisterUserTest(String rowNumber, String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state,String password,String confirmPassword  ) throws Exception
 		{
+         	//Below step is to Register the user
 			registeUserPOM.populateUser(rowNumber,firstName,lastName,eMail,telephone,address,extraAddress,city,postCode,country,state,password,confirmPassword);
 			confirmLoginPOM.validateConfirmationMsg();
-		    confirmLoginPOM.logout();
+		    confirmLoginPOM.logout(); 
+		    
+		    //below step is to open browser with Admin URL
 		    driver.get(adminUrl);
 		    adminLoginPOM.loginToAdmin(adminId, adminPwd);
 		    adminDashBoardPOM.dashBoardVisible();
+		    
+		    //Navigate to Customers page
 		    adminDashBoardPOM.navigateToCustomers();
 		    customerDetailsPOM.validateCustomersPage();
+		    
+		  //below step is to validate customer data from excel sheet
 		    customerDetailsPOM.validateCustomerData(firstName,lastName,eMail,telephone,address,extraAddress,city,postCode,country,state,password,confirmPassword);
 		    screenShot.captureScreenShot("AccountCreated_RTTC_001");   
 		     		

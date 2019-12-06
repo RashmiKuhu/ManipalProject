@@ -1,12 +1,9 @@
 package com.training.pom;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class CheckoutOptions {
@@ -27,12 +24,15 @@ private WebElement guestUser;
 @FindBy(xpath="//input[@id='button-account']")
 private WebElement continueBtn;
 
+
+// This method is to validate Login page
 public void validateLoginPage()
 {
  String expectedOption="Step 1: Checkout Options";
  Assert.assertEquals(checkoutOption.getText(), expectedOption);
 }
 
+//This method is to select Guest user
 public void selectGuestUser()
 {
 	guestUser.click();

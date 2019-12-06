@@ -60,7 +60,7 @@ private WebElement totalAlert;
 private WebElement viewCart;
 
 
-   public void clickAddToCart() //This method is to click on Add to cart button
+ public void clickAddToCart() //This method is to click on Add to cart button
       {
 	  	   addToCardBtn.click();
       }

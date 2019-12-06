@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name = "Complex Test">
+   <test name = "Complex Test">
+      <classes>
+         <class name = "com.training.complex.tests.RTTC061RegisterUserDBTest" />
+         <class name = "com.training.complex.tests.RTTC062MultipleUserRegistrationTest" />
+         <class name = "com.training.complex.tests.RTTC063RegisterInvalidUser" />
+         <class name = "com.training.complex.tests.RTTC064AdminAddCategory" />
+      </classes>
+   </test>
+</suite>	

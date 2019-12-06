@@ -40,6 +40,8 @@ private WebDriver driver;
 	private WebElement actConfirmMsg;
 	
 	
+	
+	//This method is to enter user details
 	public void userDetails(String eMail,String password)
 	{
 		this.eMail.clear();
@@ -48,6 +50,7 @@ private WebDriver driver;
 		this.password.sendKeys(password);
 	}
 	
+	//This method is to click register button
 	public void clickRegisterBtn() {
 		registerBtn.click(); 
 		

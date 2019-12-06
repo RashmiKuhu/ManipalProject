@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+<testng-results skipped="0" failed="1" ignored="0" total="13" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Medium Test" duration-ms="297980" started-at="2019-12-06T13:29:53 IST" finished-at="2019-12-06T13:34:51 IST">
+  <suite name="Complex Test" duration-ms="502573" started-at="2019-12-06T14:42:15 IST" finished-at="2019-12-06T14:50:38 IST">
     <groups>
     </groups>
-    <test name="Medium Test" duration-ms="297980" started-at="2019-12-06T13:29:53 IST" finished-at="2019-12-06T13:34:51 IST">
-      <class name="com.training.medium.tests.RTTC034OrderAsGuestUserTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC034OrderAsGuestUserTest@9660f4e]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2019-12-06T13:33:50 IST" finished-at="2019-12-06T13:33:50 IST">
+    <test name="Complex Test" duration-ms="502573" started-at="2019-12-06T14:42:15 IST" finished-at="2019-12-06T14:50:38 IST">
+      <class name="com.training.complex.tests.RTTC061RegisterUserDBTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@4bbfb90a]" name="setUpBeforeClass" is-config="true" duration-ms="32" started-at="2019-12-06T14:42:15 IST" finished-at="2019-12-06T14:42:15 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC034OrderAsGuestUserTest@9660f4e]" name="setUp" is-config="true" duration-ms="20090" started-at="2019-12-06T13:33:50 IST" finished-at="2019-12-06T13:34:10 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@4bbfb90a]" name="setUp" is-config="true" duration-ms="28258" started-at="2019-12-06T14:42:15 IST" finished-at="2019-12-06T14:42:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="OrderAsGuestUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC034OrderAsGuestUserTest@9660f4e]" name="OrderAsGuestUser" duration-ms="40292" started-at="2019-12-06T13:34:10 IST" data-provider="xls-inputs" finished-at="2019-12-06T13:34:50 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@4bbfb90a]" name="RegisterUserTest" duration-ms="19277" started-at="2019-12-06T14:42:44 IST" data-provider="xls-inputs" finished-at="2019-12-06T14:43:03 IST">
           <params>
             <param index="0">
               <value>
@@ -85,55 +85,109 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OrderAsGuestUser -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC034OrderAsGuestUserTest@9660f4e]" name="tearDown" is-config="true" duration-ms="970" started-at="2019-12-06T13:34:50 IST" finished-at="2019-12-06T13:34:51 IST">
+        </test-method> <!-- RegisterUserTest -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@4bbfb90a]" name="cleanUp" is-config="true" duration-ms="2431" started-at="2019-12-06T14:43:03 IST" finished-at="2019-12-06T14:43:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@4bbfb90a]" name="tearDown" is-config="true" duration-ms="866" started-at="2019-12-06T14:50:36 IST" finished-at="2019-12-06T14:50:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.medium.tests.RTTC034OrderAsGuestUserTest -->
-      <class name="com.training.medium.tests.RTTC031LoginErrorTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="setUpBeforeClass" is-config="true" duration-ms="23" started-at="2019-12-06T13:29:53 IST" finished-at="2019-12-06T13:29:53 IST">
+      </class> <!-- com.training.complex.tests.RTTC061RegisterUserDBTest -->
+      <class name="com.training.complex.tests.RTTC063RegisterInvalidUser">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="setUpBeforeClass" is-config="true" duration-ms="2" started-at="2019-12-06T14:46:47 IST" finished-at="2019-12-06T14:46:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="setUp" is-config="true" duration-ms="27495" started-at="2019-12-06T13:29:54 IST" finished-at="2019-12-06T13:30:21 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="setUp" is-config="true" duration-ms="25267" started-at="2019-12-06T14:46:47 IST" finished-at="2019-12-06T14:47:13 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateUserLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="validateUserLoginTest" duration-ms="4401" started-at="2019-12-06T13:30:21 IST" data-provider="xls-Login" finished-at="2019-12-06T13:30:26 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="RegisterUserTest" duration-ms="7750" started-at="2019-12-06T14:47:13 IST" data-provider="invalidUser" finished-at="2019-12-06T14:47:20 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[manzoor@gmail.com]]>
+                <![CDATA[1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[123456]]>
+                <![CDATA[manipal]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[manipal22@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[yeshwanthapur]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[560022]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[manipal]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[manipal]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateUserLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="tearDown" is-config="true" duration-ms="2100" started-at="2019-12-06T13:30:26 IST" finished-at="2019-12-06T13:30:28 IST">
+        </test-method> <!-- RegisterUserTest -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="cleanUp" is-config="true" duration-ms="1015" started-at="2019-12-06T14:47:20 IST" finished-at="2019-12-06T14:47:21 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="setUp" is-config="true" duration-ms="21538" started-at="2019-12-06T13:30:28 IST" finished-at="2019-12-06T13:30:49 IST">
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="setUp" is-config="true" duration-ms="24513" started-at="2019-12-06T14:47:21 IST" finished-at="2019-12-06T14:47:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateUserLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="validateUserLoginTest" duration-ms="3951" started-at="2019-12-06T13:30:49 IST" data-provider="xls-Login" finished-at="2019-12-06T13:30:53 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="RegisterUserTest" duration-ms="7710" started-at="2019-12-06T14:47:46 IST" data-provider="invalidUser" finished-at="2019-12-06T14:47:54 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[manzoor]]>
+                <![CDATA[2]]>
               </value>
             </param>
             <param index="1">
@@ -142,112 +196,849 @@
               </value>
             </param>
             <param index="2">
-              <value>
-                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUserLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="tearDown" is-config="true" duration-ms="2117" started-at="2019-12-06T13:30:53 IST" finished-at="2019-12-06T13:30:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="setUp" is-config="true" duration-ms="23662" started-at="2019-12-06T13:30:55 IST" finished-at="2019-12-06T13:31:19 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateUserLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="validateUserLoginTest" duration-ms="4193" started-at="2019-12-06T13:31:19 IST" data-provider="xls-Login" finished-at="2019-12-06T13:31:23 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[manzoor]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[mehadi]]>
               </value>
             </param>
-            <param index="2">
+            <param index="3">
               <value>
-                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8906543210]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[electronic city]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[560100]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[manzoor]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateUserLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="tearDown" is-config="true" duration-ms="2006" started-at="2019-12-06T13:31:23 IST" finished-at="2019-12-06T13:31:25 IST">
+        </test-method> <!-- RegisterUserTest -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="cleanUp" is-config="true" duration-ms="889" started-at="2019-12-06T14:47:54 IST" finished-at="2019-12-06T14:47:55 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="setUp" is-config="true" duration-ms="21485" started-at="2019-12-06T13:31:25 IST" finished-at="2019-12-06T13:31:47 IST">
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="setUp" is-config="true" duration-ms="25230" started-at="2019-12-06T14:47:55 IST" finished-at="2019-12-06T14:48:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateUserLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="validateUserLoginTest" duration-ms="3736" started-at="2019-12-06T13:31:47 IST" data-provider="xls-Login" finished-at="2019-12-06T13:31:50 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="RegisterUserTest" duration-ms="7763" started-at="2019-12-06T14:48:20 IST" data-provider="invalidUser" finished-at="2019-12-06T14:48:28 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[manz1]]>
+                <![CDATA[3]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[manz1]]>
+                <![CDATA[puli]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+                <![CDATA[keshi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[puli23@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[chennai]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[chennai]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[chennai]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[561321]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Tamil Nadu]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[pulikeshi]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[pulikeshi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateUserLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="tearDown" is-config="true" duration-ms="2041" started-at="2019-12-06T13:31:50 IST" finished-at="2019-12-06T13:31:52 IST">
+        </test-method> <!-- RegisterUserTest -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="cleanUp" is-config="true" duration-ms="947" started-at="2019-12-06T14:48:28 IST" finished-at="2019-12-06T14:48:28 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.training.medium.tests.RTTC031LoginErrorTest -->
-      <class name="com.training.medium.tests.RTTC033CheckoutWithLoginTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@7c29daf3]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-12-06T13:32:39 IST" finished-at="2019-12-06T13:32:39 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@7c29daf3]" name="setUp" is-config="true" duration-ms="27443" started-at="2019-12-06T13:32:39 IST" finished-at="2019-12-06T13:33:06 IST">
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="setUp" is-config="true" duration-ms="25808" started-at="2019-12-06T14:48:28 IST" finished-at="2019-12-06T14:48:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="OrderTestWithLoginLogin()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@7c29daf3]" name="OrderTestWithLoginLogin" duration-ms="43381" started-at="2019-12-06T13:33:06 IST" finished-at="2019-12-06T13:33:50 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="RegisterUserTest" duration-ms="8499" started-at="2019-12-06T14:48:54 IST" data-provider="invalidUser" finished-at="2019-12-06T14:49:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[priya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[prabhu]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[priya@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8906754321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[hyderabad]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[hyderabad]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[hyderabad]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[9876547]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Telangana]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[priya]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OrderTestWithLoginLogin -->
-      </class> <!-- com.training.medium.tests.RTTC033CheckoutWithLoginTest -->
-      <class name="com.training.medium.tests.RTTC032CheckoutLoginTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC032CheckoutLoginTest@4bbfb90a]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-12-06T13:31:52 IST" finished-at="2019-12-06T13:31:52 IST">
+        </test-method> <!-- RegisterUserTest -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="cleanUp" is-config="true" duration-ms="918" started-at="2019-12-06T14:49:03 IST" finished-at="2019-12-06T14:49:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- com.training.complex.tests.RTTC063RegisterInvalidUser -->
+      <class name="com.training.complex.tests.RTTC064AdminAddCategory">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2019-12-06T14:49:04 IST" finished-at="2019-12-06T14:49:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC032CheckoutLoginTest@4bbfb90a]" name="setUp" is-config="true" duration-ms="19423" started-at="2019-12-06T13:31:52 IST" finished-at="2019-12-06T13:32:12 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="setUp" is-config="true" duration-ms="16038" started-at="2019-12-06T14:49:04 IST" finished-at="2019-12-06T14:49:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="OrderTestwithoutLogin()[pri:0, instance:com.training.medium.tests.RTTC032CheckoutLoginTest@4bbfb90a]" name="OrderTestwithoutLogin" duration-ms="26145" started-at="2019-12-06T13:32:12 IST" finished-at="2019-12-06T13:32:38 IST">
+        <test-method status="PASS" signature="addCategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="addCategory" duration-ms="7181" started-at="2019-12-06T14:49:20 IST" data-provider="addCategory" finished-at="2019-12-06T14:49:27 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Electronic]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Electronic]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Electronic]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Electronic]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- OrderTestwithoutLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC032CheckoutLoginTest@4bbfb90a]" name="tearDown" is-config="true" duration-ms="988" started-at="2019-12-06T13:32:38 IST" finished-at="2019-12-06T13:32:39 IST">
+        </test-method> <!-- addCategory -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="tearDown" is-config="true" duration-ms="936" started-at="2019-12-06T14:49:27 IST" finished-at="2019-12-06T14:49:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.medium.tests.RTTC032CheckoutLoginTest -->
-    </test> <!-- Medium Test -->
-  </suite> <!-- Medium Test -->
-  <suite name="All Suites" duration-ms="0" started-at="2019-12-06T13:34:52 IST" finished-at="2019-12-06T13:34:52 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="setUp" is-config="true" duration-ms="15059" started-at="2019-12-06T14:49:28 IST" finished-at="2019-12-06T14:49:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addCategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="addCategory" duration-ms="6670" started-at="2019-12-06T14:49:43 IST" data-provider="addCategory" finished-at="2019-12-06T14:49:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TVNew]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TVNew]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TVNew]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[TVNew]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCategory -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="tearDown" is-config="true" duration-ms="858" started-at="2019-12-06T14:49:50 IST" finished-at="2019-12-06T14:49:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="setUp" is-config="true" duration-ms="15940" started-at="2019-12-06T14:49:51 IST" finished-at="2019-12-06T14:50:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addCategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="addCategory" duration-ms="6202" started-at="2019-12-06T14:50:07 IST" data-provider="addCategory" finished-at="2019-12-06T14:50:13 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Kitchen]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kitchen]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kitchen]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Kitchen]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCategory -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="tearDown" is-config="true" duration-ms="997" started-at="2019-12-06T14:50:13 IST" finished-at="2019-12-06T14:50:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="setUp" is-config="true" duration-ms="14872" started-at="2019-12-06T14:50:14 IST" finished-at="2019-12-06T14:50:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addCategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="addCategory" duration-ms="6179" started-at="2019-12-06T14:50:29 IST" data-provider="addCategory" finished-at="2019-12-06T14:50:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sports]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Sports]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sports]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sports]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCategory -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="tearDown" is-config="true" duration-ms="1100" started-at="2019-12-06T14:50:35 IST" finished-at="2019-12-06T14:50:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.complex.tests.RTTC064AdminAddCategory -->
+      <class name="com.training.complex.tests.RTTC062MultipleUserRegistrationTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2019-12-06T14:43:05 IST" finished-at="2019-12-06T14:43:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="setUp" is-config="true" duration-ms="19589" started-at="2019-12-06T14:43:05 IST" finished-at="2019-12-06T14:43:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="RegisterUserTest" duration-ms="26233" started-at="2019-12-06T14:43:25 IST" data-provider="xls-newuser" finished-at="2019-12-06T14:43:51 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sunil]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nagaraj]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sunilnagraj@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9876543210]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[yeshwanthapur]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[560022]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[manipal]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[manipal]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUserTest -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="cleanUp" is-config="true" duration-ms="2752" started-at="2019-12-06T14:43:51 IST" finished-at="2019-12-06T14:43:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="setUp" is-config="true" duration-ms="18657" started-at="2019-12-06T14:43:54 IST" finished-at="2019-12-06T14:44:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="RegisterUserTest" duration-ms="25407" started-at="2019-12-06T14:44:13 IST" data-provider="xls-newuser" finished-at="2019-12-06T14:44:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mehadi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mehadi@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8906543210]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[electronic city]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[560100]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUserTest -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="cleanUp" is-config="true" duration-ms="2687" started-at="2019-12-06T14:44:38 IST" finished-at="2019-12-06T14:44:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="setUp" is-config="true" duration-ms="18331" started-at="2019-12-06T14:44:41 IST" finished-at="2019-12-06T14:44:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="RegisterUserTest" duration-ms="25964" started-at="2019-12-06T14:44:59 IST" data-provider="xls-newuser" finished-at="2019-12-06T14:45:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[puli]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[keshi]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[pulikeshi@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[6789043217]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[chennai]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[chennai]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[chennai]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[561321]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Tamil Nadu]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[pulikeshi]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[pulikeshi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUserTest -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="cleanUp" is-config="true" duration-ms="2627" started-at="2019-12-06T14:45:25 IST" finished-at="2019-12-06T14:45:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="setUp" is-config="true" duration-ms="18823" started-at="2019-12-06T14:45:28 IST" finished-at="2019-12-06T14:45:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="RegisterUserTest" duration-ms="30799" started-at="2019-12-06T14:45:46 IST" data-provider="xls-newuser" finished-at="2019-12-06T14:46:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[priya]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[prabhu]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[priyaprabhu@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8906754321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[hyderabad]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[hyderabad]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[hyderabad]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[620102]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Telangana]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[priya]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[priya]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-primary']"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-G9U9536', ip: '9.81.207.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir18520_264073136}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:63181}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 0d7e48764e6842245a677fee64edc0a8
+*** Element info: {Using=xpath, value=//a[@class='btn btn-primary']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-primary']"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-G9U9536', ip: '9.81.207.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir18520_264073136}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:63181}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 0d7e48764e6842245a677fee64edc0a8
+*** Element info: {Using=xpath, value=//a[@class='btn btn-primary']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy12.click(Unknown Source)
+at com.training.pom.LoginRegisterPOM.clickRegisterBtn(LoginRegisterPOM.java:52)
+at com.training.complex.tests.RTTC062MultipleUserRegistrationTest.RegisterUserTest(RTTC062MultipleUserRegistrationTest.java:94)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1175)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUserTest -->
+        <test-method status="FAIL" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="cleanUp" is-config="true" duration-ms="30032" started-at="2019-12-06T14:46:17 IST" finished-at="2019-12-06T14:46:47 IST">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='form-customer']/div/table/tbody/tr[1]/td[1]/input"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-G9U9536', ip: '9.81.207.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir18520_264073136}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:63181}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 0d7e48764e6842245a677fee64edc0a8
+*** Element info: {Using=xpath, value=//*[@id='form-customer']/div/table/tbody/tr[1]/td[1]/input}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='form-customer']/div/table/tbody/tr[1]/td[1]/input"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+System info: host: 'DESKTOP-G9U9536', ip: '9.81.207.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir18520_264073136}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:63181}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 0d7e48764e6842245a677fee64edc0a8
+*** Element info: {Using=xpath, value=//*[@id='form-customer']/div/table/tbody/tr[1]/td[1]/input}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy12.isEnabled(Unknown Source)
+at com.training.pom.CustomerDetailsPOM.deleteCustomer(CustomerDetailsPOM.java:99)
+at com.training.complex.tests.RTTC062MultipleUserRegistrationTest.cleanUp(RTTC062MultipleUserRegistrationTest.java:75)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1175)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="tearDown" is-config="true" duration-ms="900" started-at="2019-12-06T14:50:37 IST" finished-at="2019-12-06T14:50:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.complex.tests.RTTC062MultipleUserRegistrationTest -->
+    </test> <!-- Complex Test -->
+  </suite> <!-- Complex Test -->
+  <suite name="All Suites" duration-ms="0" started-at="2019-12-06T14:50:38 IST" finished-at="2019-12-06T14:50:38 IST">
     <groups>
     </groups>
   </suite> <!-- All Suites -->

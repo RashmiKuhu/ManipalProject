@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class CategoriesPOM {
@@ -38,6 +37,8 @@ private WebElement successMsg;
 @FindBy(xpath="//*[@id=\'header\']/ul/li[4]/a/span")
 private WebElement logoutBtn;
 
+
+//This method is to validate category page
 public void validatecategoryPage()
 {
   	String expectedCatergory ="Categories";
@@ -48,17 +49,19 @@ public void validatecategoryPage()
   	Assert.assertEquals(actionHeader.getText(), "Action");
 }
 
-
+//This method is to add category
 public void clickAddCategory()
 {
 	addBtn.click();
 }
 
+// This method is to validate category added
 public void validateCategoryAdded()
  {
 	Assert.assertTrue(successMsg.getText().contains("Success"));
   }
 
+//This method is to logout from admin URL
 public void logoutAdmin()
 {
 	 logoutBtn.click();

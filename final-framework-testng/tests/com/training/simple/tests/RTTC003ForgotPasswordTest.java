@@ -7,17 +7,12 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.training.generics.ScreenShot;
-import com.training.pom.ConfirmLoginPOM;
 import com.training.pom.ForgotPasswordPOM;
 import com.training.pom.LoginRegisterPOM;
-import com.training.pom.MyAccountPOM;
-import com.training.pom.RegisterUserPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
