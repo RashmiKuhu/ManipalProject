@@ -32,17 +32,8 @@ private WebElement myOrders;
          {
     	  String expectedCnfMsg="Your order has been successfully processed!";
 
-	       // String actualMsg=driver.getTitle();
-
-	       // Assert.assertTrue(actualMsg.contains("placed"));
-
-	        Assert.assertEquals(confirmMsg.getText(), expectedCnfMsg);
-	     //   String expectedCnfMsg="Your order has been placed!";
-	       //String actualMsg=driver.getTitle();
-	       // Assert.assertTrue(actualMsg.contains("placed"));
-	       //Assert.assertTrue(driver.getTitle().contains("placed"));
-	      //  Assert.assertEquals(actualMsg, expectedCnfMsg);
-	  			  
+	      Assert.assertEquals(confirmMsg.getText(), expectedCnfMsg);
+	    	  			  
          }
 
       public void GotoMyOrders() //Mouseover on the Account icon and select My Orders from the list.

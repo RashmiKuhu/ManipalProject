@@ -73,10 +73,10 @@ public void setUp() throws Exception {
 					
 		}
 		
-//@AfterMethod
-//public void tearDown() throws Exception {
-	//  driver.quit();
-	 //}
+@AfterMethod
+public void tearDown() throws Exception {
+	  driver.quit();
+	 }
 	 
 
 //This method is to createOrder for user who is already logged in to application

@@ -1,28 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61832" started-at="2019-12-06T12:21:42 IST" finished-at="2019-12-06T12:22:44 IST">
+  <suite name="Medium Test" duration-ms="297980" started-at="2019-12-06T13:29:53 IST" finished-at="2019-12-06T13:34:51 IST">
     <groups>
-      <group name="simple">
-        <method signature="RTTC004OrderDetailsTest.ValidateOrder()[pri:0, instance:com.training.simple.tests.RTTC004OrderDetailsTest@6321e813]" name="ValidateOrder" class="com.training.simple.tests.RTTC004OrderDetailsTest"/>
-      </group> <!-- simple -->
     </groups>
-    <test name="Default test" duration-ms="61832" started-at="2019-12-06T12:21:42 IST" finished-at="2019-12-06T12:22:44 IST">
-      <class name="com.training.simple.tests.RTTC004OrderDetailsTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.simple.tests.RTTC004OrderDetailsTest@6321e813]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2019-12-06T12:21:42 IST" finished-at="2019-12-06T12:21:42 IST">
+    <test name="Medium Test" duration-ms="297980" started-at="2019-12-06T13:29:53 IST" finished-at="2019-12-06T13:34:51 IST">
+      <class name="com.training.medium.tests.RTTC034OrderAsGuestUserTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC034OrderAsGuestUserTest@9660f4e]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2019-12-06T13:33:50 IST" finished-at="2019-12-06T13:33:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.simple.tests.RTTC004OrderDetailsTest@6321e813]" name="setUp" is-config="true" duration-ms="55187" started-at="2019-12-06T12:21:42 IST" finished-at="2019-12-06T12:22:37 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC034OrderAsGuestUserTest@9660f4e]" name="setUp" is-config="true" duration-ms="20090" started-at="2019-12-06T13:33:50 IST" finished-at="2019-12-06T13:34:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ValidateOrder()[pri:0, instance:com.training.simple.tests.RTTC004OrderDetailsTest@6321e813]" name="ValidateOrder" duration-ms="6575" started-at="2019-12-06T12:22:37 IST" finished-at="2019-12-06T12:22:44 IST">
+        <test-method status="PASS" signature="OrderAsGuestUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC034OrderAsGuestUserTest@9660f4e]" name="OrderAsGuestUser" duration-ms="40292" started-at="2019-12-06T13:34:10 IST" data-provider="xls-inputs" finished-at="2019-12-06T13:34:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kuhu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Singh]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[kuhuReshu45@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Kadugodi]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Kannamangala]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[560067]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[reshu198]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[reshu198]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateOrder -->
-      </class> <!-- com.training.simple.tests.RTTC004OrderDetailsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- OrderAsGuestUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC034OrderAsGuestUserTest@9660f4e]" name="tearDown" is-config="true" duration-ms="970" started-at="2019-12-06T13:34:50 IST" finished-at="2019-12-06T13:34:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.medium.tests.RTTC034OrderAsGuestUserTest -->
+      <class name="com.training.medium.tests.RTTC031LoginErrorTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="setUpBeforeClass" is-config="true" duration-ms="23" started-at="2019-12-06T13:29:53 IST" finished-at="2019-12-06T13:29:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="setUp" is-config="true" duration-ms="27495" started-at="2019-12-06T13:29:54 IST" finished-at="2019-12-06T13:30:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateUserLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="validateUserLoginTest" duration-ms="4401" started-at="2019-12-06T13:30:21 IST" data-provider="xls-Login" finished-at="2019-12-06T13:30:26 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="tearDown" is-config="true" duration-ms="2100" started-at="2019-12-06T13:30:26 IST" finished-at="2019-12-06T13:30:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="setUp" is-config="true" duration-ms="21538" started-at="2019-12-06T13:30:28 IST" finished-at="2019-12-06T13:30:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateUserLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="validateUserLoginTest" duration-ms="3951" started-at="2019-12-06T13:30:49 IST" data-provider="xls-Login" finished-at="2019-12-06T13:30:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="tearDown" is-config="true" duration-ms="2117" started-at="2019-12-06T13:30:53 IST" finished-at="2019-12-06T13:30:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="setUp" is-config="true" duration-ms="23662" started-at="2019-12-06T13:30:55 IST" finished-at="2019-12-06T13:31:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateUserLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="validateUserLoginTest" duration-ms="4193" started-at="2019-12-06T13:31:19 IST" data-provider="xls-Login" finished-at="2019-12-06T13:31:23 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mehadi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="tearDown" is-config="true" duration-ms="2006" started-at="2019-12-06T13:31:23 IST" finished-at="2019-12-06T13:31:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="setUp" is-config="true" duration-ms="21485" started-at="2019-12-06T13:31:25 IST" finished-at="2019-12-06T13:31:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateUserLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="validateUserLoginTest" duration-ms="3736" started-at="2019-12-06T13:31:47 IST" data-provider="xls-Login" finished-at="2019-12-06T13:31:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manz1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manz1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@7494e528]" name="tearDown" is-config="true" duration-ms="2041" started-at="2019-12-06T13:31:50 IST" finished-at="2019-12-06T13:31:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.medium.tests.RTTC031LoginErrorTest -->
+      <class name="com.training.medium.tests.RTTC033CheckoutWithLoginTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@7c29daf3]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-12-06T13:32:39 IST" finished-at="2019-12-06T13:32:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@7c29daf3]" name="setUp" is-config="true" duration-ms="27443" started-at="2019-12-06T13:32:39 IST" finished-at="2019-12-06T13:33:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="OrderTestWithLoginLogin()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@7c29daf3]" name="OrderTestWithLoginLogin" duration-ms="43381" started-at="2019-12-06T13:33:06 IST" finished-at="2019-12-06T13:33:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderTestWithLoginLogin -->
+      </class> <!-- com.training.medium.tests.RTTC033CheckoutWithLoginTest -->
+      <class name="com.training.medium.tests.RTTC032CheckoutLoginTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC032CheckoutLoginTest@4bbfb90a]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-12-06T13:31:52 IST" finished-at="2019-12-06T13:31:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC032CheckoutLoginTest@4bbfb90a]" name="setUp" is-config="true" duration-ms="19423" started-at="2019-12-06T13:31:52 IST" finished-at="2019-12-06T13:32:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="OrderTestwithoutLogin()[pri:0, instance:com.training.medium.tests.RTTC032CheckoutLoginTest@4bbfb90a]" name="OrderTestwithoutLogin" duration-ms="26145" started-at="2019-12-06T13:32:12 IST" finished-at="2019-12-06T13:32:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderTestwithoutLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC032CheckoutLoginTest@4bbfb90a]" name="tearDown" is-config="true" duration-ms="988" started-at="2019-12-06T13:32:38 IST" finished-at="2019-12-06T13:32:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.medium.tests.RTTC032CheckoutLoginTest -->
+    </test> <!-- Medium Test -->
+  </suite> <!-- Medium Test -->
+  <suite name="All Suites" duration-ms="0" started-at="2019-12-06T13:34:52 IST" finished-at="2019-12-06T13:34:52 IST">
+    <groups>
+    </groups>
+  </suite> <!-- All Suites -->
 </testng-results>
