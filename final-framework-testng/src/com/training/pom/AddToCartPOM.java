@@ -73,7 +73,8 @@ private WebElement viewCart;
        }
    
    public void clickShoppingCart() // This method is to mouseover on the Shoping cart
-    {
+    { WebDriverWait wait = new WebDriverWait(driver, 2000);
+    wait.until(ExpectedConditions.visibilityOf(shoppingCart));
 	   Actions cartSelect=new Actions(driver);
 		  cartSelect.moveToElement(shoppingCart).build().perform();
 		  

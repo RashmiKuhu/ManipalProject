@@ -30,10 +30,18 @@ private WebElement myOrders;
 
       public void confirmOrder() // checking confirmation message that order has been processed successfully.
          {
-	        String expectedCnfMsg="Your order has been successfully processed!";
+    	  String expectedCnfMsg="Your order has been successfully processed!";
+
 	       // String actualMsg=driver.getTitle();
+
 	       // Assert.assertTrue(actualMsg.contains("placed"));
+
 	        Assert.assertEquals(confirmMsg.getText(), expectedCnfMsg);
+	     //   String expectedCnfMsg="Your order has been placed!";
+	       //String actualMsg=driver.getTitle();
+	       // Assert.assertTrue(actualMsg.contains("placed"));
+	       //Assert.assertTrue(driver.getTitle().contains("placed"));
+	      //  Assert.assertEquals(actualMsg, expectedCnfMsg);
 	  			  
          }
 

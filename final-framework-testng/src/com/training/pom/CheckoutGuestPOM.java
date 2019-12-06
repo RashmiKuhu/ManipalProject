@@ -80,7 +80,7 @@ private WebElement confirmOrderBtn;
 
 
 
-public void populateCustomerDetails(String fistName,String lastName,String eMail,String telePhone,String addressOne,String addressTwo,String city,String postCode,String country,String state,String password, String confirmPassword )
+public void populateCustomerDetails(String rowNumber,String fistName,String lastName,String eMail,String telePhone,String addressOne,String addressTwo,String city,String postCode,String country,String state,String password, String confirmPassword )
 {
 	this.firstNamePmt.clear();
 	this.firstNamePmt.sendKeys(fistName);

@@ -38,7 +38,6 @@ private OrderFinalizePOM orderFinalizePOM;
 private OrderConfirmationPOM orderConfirmationPOM;
 private AddToCartPOM addToCartPOM;
 private ShoppingCartPOM shoppingCartPOM;
-private CheckoutOptions checkoutOptions;
 private static Properties properties;
 private ScreenShot screenShot;
 		
@@ -51,7 +50,7 @@ private ScreenShot screenShot;
 			 
 		}
 		
-@BeforeMethod
+@BeforeMethod  //initializing 
 public void setUp() throws Exception {
 	    	driver = DriverFactory.getDriver(DriverNames.CHROME);
 			baseUrl = properties.getProperty("baseURL");
@@ -61,10 +60,12 @@ public void setUp() throws Exception {
 			confirmLoginPOM = new ConfirmLoginPOM(driver);
 			addToCartPOM = new AddToCartPOM(driver);
 			shoppingCartPOM=new ShoppingCartPOM(driver);
-			checkoutOptions = new CheckoutOptions(driver);
 			orderFinalizePOM = new OrderFinalizePOM(driver);
+			orderConfirmationPOM = new OrderConfirmationPOM(driver);
 		  	screenShot = new ScreenShot(driver); 
-		   	driver.get(baseUrl); 	
+		   	driver.get(baseUrl); 
+		   	// login to the application
+		   	
 		   	retailHomePOM.GotoLoginPage();
 		   	loginRegisterPOM.userDetails("Reshu123@gmail.com","reshu123");
 			loginRegisterPOM.clickLoginBtn();
@@ -72,10 +73,10 @@ public void setUp() throws Exception {
 					
 		}
 		
-@AfterMethod
-public void tearDown() throws Exception {
-	  driver.quit();
-	 }
+//@AfterMethod
+//public void tearDown() throws Exception {
+	//  driver.quit();
+	 //}
 	 
 
 //This method is to createOrder for user who is already logged in to application
@@ -84,11 +85,9 @@ public void tearDown() throws Exception {
 	{
 		confirmLoginPOM.GotoHomePage();
 		retailHomePOM.selectProduct();
-		//confirmLoginPOM.selectProduct();
 		addToCartPOM.clickAddToCart();
-		
+		// storing data returned from Add to Cart page
 		String quantity =addToCartPOM.getQuantity();
-		System.out.println(quantity);
 		String productName=addToCartPOM.getProductName();
 		String modelname=addToCartPOM.getModelName();
 		String unitPrice=addToCartPOM.getPrice();

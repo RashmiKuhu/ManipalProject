@@ -2,27 +2,17 @@ package com.training.medium.tests;
 
 import com.training.pom.RetailHomePOM;
 import com.training.pom.ShoppingCartPOM;
-
 import com.training.pom.AddToCartPOM;
 import com.training.pom.CheckoutOptions;
-import com.training.pom.ConfirmLoginPOM;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import com.training.generics.ScreenShot;
-import com.training.pom.LoginRegisterPOM;
-import com.training.pom.MyOrder;
-import com.training.pom.OrderConfirmationPOM;
-import com.training.pom.OrderFinalizePOM;
-import com.training.pom.OrderHistory;
-import com.training.pom.RegisterUserPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
@@ -46,7 +36,7 @@ private ScreenShot screenShot;
 		 
 	}
 	
-@BeforeMethod
+@BeforeMethod //initializing
 	public void setUp() throws Exception {
     	driver = DriverFactory.getDriver(DriverNames.CHROME);
 		baseUrl = properties.getProperty("baseURL");

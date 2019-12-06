@@ -3,7 +3,9 @@
 
 <suite name = "All Suites">
  <suite-files>
-   <suite-file path= "SimpleTest.xml" />
+   
+   <suite-file path= "MediumTest.xml" />
+   
    
  </suite-files>
    

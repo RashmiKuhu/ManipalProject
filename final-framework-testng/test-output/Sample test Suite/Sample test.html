@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Sample test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 25 17:42:54 IST 2019</td>
+<td>Started on:</td><td>Fri Dec 06 11:58:27 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14327 ms)</td>
+<tr><td>Total time:</td><td>184 seconds (184097 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,54 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.training.simple.tests.RegisterUserTest.setUp()'><b>setUp</b><br>Test class: com.training.simple.tests.RegisterUserTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
-	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:68)
-	at com.training.pom.RetailHomePOM.&lt;init&gt;(RetailHomePOM.java:24)
-	at com.training.simple.tests.RegisterUserTest.setUp(RegisterUserTest.java:41)
+<td title='com.training.simple.tests.RTTC004OrderDetailsTest.setUp()'><b>setUp</b><br>Test class: com.training.simple.tests.RTTC004OrderDetailsTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;checkbox&quot; name=&quot;agree&quot; value=&quot;1&quot;&gt; is not clickable at point (56, 703). Other element would receive the click: &lt;label class=&quot;checkbox&quot;&gt;...&lt;/label&gt;
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-G9U9536&apos;, ip: &apos;9.81.207.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir17192_1545276764}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57553}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: c8717df99feb465728ff69fad4e7a78c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.training.pom.OrderFinalizePOM.finalizeOrder(OrderFinalizePOM.java:158)
+	at com.training.simple.tests.RTTC004OrderDetailsTest.setUp(RTTC004OrderDetailsTest.java:87)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1569754439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1569754439'><pre>java.lang.NullPointerException
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
-	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:68)
-	at com.training.pom.RetailHomePOM.&lt;init&gt;(RetailHomePOM.java:24)
-	at com.training.simple.tests.RegisterUserTest.setUp(RegisterUserTest.java:41)
+... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace137275020", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace137275020'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;checkbox&quot; name=&quot;agree&quot; value=&quot;1&quot;&gt; is not clickable at point (56, 703). Other element would receive the click: &lt;label class=&quot;checkbox&quot;&gt;...&lt;/label&gt;
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-G9U9536&apos;, ip: &apos;9.81.207.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir17192_1545276764}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57553}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: c8717df99feb465728ff69fad4e7a78c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.training.pom.OrderFinalizePOM.finalizeOrder(OrderFinalizePOM.java:158)
+	at com.training.simple.tests.RTTC004OrderDetailsTest.setUp(RTTC004OrderDetailsTest.java:87)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -114,6 +149,7 @@ function toggleAllBoxes() {
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1175)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
 	at org.testng.TestNG.runSuites(TestNG.java:1032)
 	at org.testng.TestNG.run(TestNG.java:1000)
@@ -121,21 +157,31 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>14</td>
-<td>com.training.simple.tests.RegisterUserTest@79be0360</td></tr>
+<td>59</td>
+<td>com.training.simple.tests.RTTC004OrderDetailsTest@5a8806ef</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.training.simple.tests.RegisterUserTest.tearDown()'><b>tearDown</b><br>Test class: com.training.simple.tests.RegisterUserTest</td>
+<td title='com.training.simple.tests.RTTC003ForgotPasswordTest.ForgotPasswordTest()'><b>ForgotPasswordTest</b><br>Test class: com.training.simple.tests.RTTC003ForgotPasswordTest</td>
 <td></td>
-<td>-1574683988</td>
-<td>com.training.simple.tests.RegisterUserTest@79be0360</td></tr>
+<td>11</td>
+<td>com.training.simple.tests.RTTC003ForgotPasswordTest@9660f4e</td></tr>
+<tr>
+<td title='com.training.simple.tests.RTTC001RegisterUserTest.RegisterUserTest()'><b>RegisterUserTest</b><br>Test class: com.training.simple.tests.RTTC001RegisterUserTest<br>Parameters: 1, Kuhu, Singh, kuhuReshu45@gmail.com, 987654321, Kadugodi, Kannamangala, Bangalore, 560067, India, Karnataka, reshu198, reshu198</td>
+<td></td>
+<td>21</td>
+<td>com.training.simple.tests.RTTC001RegisterUserTest@4bbfb90a</td></tr>
+<tr>
+<td title='com.training.simple.tests.RTTC002LoginTest.UserLoginTest()'><b>UserLoginTest</b><br>Test class: com.training.simple.tests.RTTC002LoginTest</td>
+<td></td>
+<td>7</td>
+<td>com.training.simple.tests.RTTC002LoginTest@7c29daf3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -145,19 +191,54 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.training.simple.tests.RegisterUserTest.RegisterUserTest()'><b>RegisterUserTest</b><br>Test class: com.training.simple.tests.RegisterUserTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
-	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:68)
-	at com.training.pom.RetailHomePOM.&lt;init&gt;(RetailHomePOM.java:24)
-	at com.training.simple.tests.RegisterUserTest.setUp(RegisterUserTest.java:41)
+<td title='com.training.simple.tests.RTTC004OrderDetailsTest.ValidateOrder()'><b>ValidateOrder</b><br>Test class: com.training.simple.tests.RTTC004OrderDetailsTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;checkbox&quot; name=&quot;agree&quot; value=&quot;1&quot;&gt; is not clickable at point (56, 703). Other element would receive the click: &lt;label class=&quot;checkbox&quot;&gt;...&lt;/label&gt;
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-G9U9536&apos;, ip: &apos;9.81.207.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir17192_1545276764}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57553}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: c8717df99feb465728ff69fad4e7a78c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.training.pom.OrderFinalizePOM.finalizeOrder(OrderFinalizePOM.java:158)
+	at com.training.simple.tests.RTTC004OrderDetailsTest.setUp(RTTC004OrderDetailsTest.java:87)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1865859824", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1865859824'><pre>java.lang.NullPointerException
-	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:787)
-	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:68)
-	at com.training.pom.RetailHomePOM.&lt;init&gt;(RetailHomePOM.java:24)
-	at com.training.simple.tests.RegisterUserTest.setUp(RegisterUserTest.java:41)
+... Removed 39 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace149225732", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace149225732'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;checkbox&quot; name=&quot;agree&quot; value=&quot;1&quot;&gt; is not clickable at point (56, 703). Other element would receive the click: &lt;label class=&quot;checkbox&quot;&gt;...&lt;/label&gt;
+  (Session info: chrome=78.0.3904.108)
+Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
+System info: host: &apos;DESKTOP-G9U9536&apos;, ip: &apos;9.81.207.147&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir17192_1545276764}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57553}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: c8717df99feb465728ff69fad4e7a78c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at com.training.pom.OrderFinalizePOM.finalizeOrder(OrderFinalizePOM.java:158)
+	at com.training.simple.tests.RTTC004OrderDetailsTest.setUp(RTTC004OrderDetailsTest.java:87)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -184,6 +265,7 @@ function toggleAllBoxes() {
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1175)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
 	at org.testng.TestNG.runSuites(TestNG.java:1032)
 	at org.testng.TestNG.run(TestNG.java:1000)
@@ -192,7 +274,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.training.simple.tests.RegisterUserTest@79be0360</td></tr>
+<td>com.training.simple.tests.RTTC004OrderDetailsTest@5a8806ef</td></tr>
 </table><p>
 </body>
 </html>

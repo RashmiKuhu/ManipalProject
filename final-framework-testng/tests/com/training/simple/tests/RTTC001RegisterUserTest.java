@@ -72,6 +72,7 @@ private CustomerDetailsPOM customerDetailsPOM;
 @AfterMethod
 public void cleanUp() throws Exception {
  customerDetailsPOM .deleteCustomer();
+ screenShot.captureScreenShot("AccountCreated_RTTC_001_delete_customer");
  customerDetailsPOM.logoutAdmin();
  adminLoginPOM.validateLoginPage();
  

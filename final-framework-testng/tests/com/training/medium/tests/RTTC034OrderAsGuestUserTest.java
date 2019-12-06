@@ -30,15 +30,13 @@ import com.training.pom.RegisterUserPOM;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-	public class RTTC034OrderAsGuestUserTest  {
+public class RTTC034OrderAsGuestUserTest  {
 		
 	private WebDriver driver;
 	private String baseUrl;
 	private RetailHomePOM retailHomePOM;
-	private LoginRegisterPOM loginRegisterPOM;
 	private CheckoutOptions checkoutOptions;
 	private CheckoutGuestPOM checkoutGuestPOM;
-	private OrderConfirmationPOM orderConfirmationPOM;
 	private AddToCartPOM addToCartPOM;
 	private ShoppingCartPOM shoppingCartPOM;
 	private GuestOrderConfirmationPOM guestOrderConfirmationPOM;
@@ -77,11 +75,12 @@ import com.training.utility.DriverNames;
 
 //To verify whether application allows user to place an order as guest user
 @Test (dataProvider = "xls-inputs", dataProviderClass = LoginDataProviders.class)
-	public void OrderAsGuestUser(String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state , String password,String confirmPassword ) throws Exception
+	public void OrderAsGuestUser(String rowNumber,String firstName,String lastName,String eMail,String telephone,String address,String extraAddress,String city,String postCode,String country,String state , String password,String confirmPassword ) throws Exception
 	{
 		retailHomePOM.selectProduct();
 		addToCartPOM.clickAddToCart();
 		
+		//below steps are to store values from Add to Cart page 
 		String quantity =addToCartPOM.getQuantity();
 		System.out.println(quantity);
 		String productName=addToCartPOM.getProductName();
@@ -100,8 +99,10 @@ import com.training.utility.DriverNames;
 		checkoutOptions.validateLoginPage();
 		checkoutOptions.selectGuestUser();
 		checkoutOptions.clickContinue();
+	
+		//populating customer details using dataProvider
 		
-		checkoutGuestPOM.populateCustomerDetails(firstName, lastName, eMail, telephone, address, extraAddress, city, postCode, country, state,password,confirmPassword);
+		checkoutGuestPOM.populateCustomerDetails(rowNumber,firstName, lastName, eMail, telephone, address, extraAddress, city, postCode, country, state,password,confirmPassword);
 		checkoutGuestPOM.clickDeliverycheck();
 	    checkoutGuestPOM.clickContinueBilling();
 	    checkoutGuestPOM.addComments();
