@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.medium.tests.RTTC033CheckoutWithLoginTest">
+      <class name="com.training.complex.tests.RTTC064AdminAddCategory">
         <methods>
-          <include name="OrderTestWithLoginLogin"/>
           <include name="setUpBeforeClass"/>
           <include name="setUp"/>
+          <include name="addCategory" invocation-numbers="1"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.training.medium.tests.RTTC033CheckoutWithLoginTest -->
+      </class> <!-- com.training.complex.tests.RTTC064AdminAddCategory -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
