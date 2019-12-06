@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.training.complex.tests.RTTC063RegisterInvalidUser">
+      <class name="com.training.simple.tests.RTTC004OrderDetailsTest">
         <methods>
-          <include name="setUpBeforeClass"/>
-          <include name="RegisterUserTest"/>
           <include name="setUp"/>
+          <include name="setUpBeforeClass"/>
+          <include name="ValidateOrder"/>
         </methods>
-      </class> <!-- com.training.complex.tests.RTTC063RegisterInvalidUser -->
+      </class> <!-- com.training.simple.tests.RTTC004OrderDetailsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

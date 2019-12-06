@@ -84,7 +84,12 @@ public void setUp() throws Exception {
 	 addToCart.clickAddToCart();
 	 addToCart.clickShoppingCart();
 	 addToCart.clickCheckOut();
-	 orderFinalizePOM.finalizeOrder();
+	 orderFinalizePOM.clickContinueBilling();
+	 orderFinalizePOM.clickContinueDelivery();
+	 orderFinalizePOM.clickContinueDeliveryMtd();
+     orderFinalizePOM.clickAgreeCheck();
+	 orderFinalizePOM.clickContinuePayment();
+	 orderFinalizePOM.clickOrderConfirmation();
 	 orderConfirmationPOM.confirmOrder();
 			
 }

@@ -2,28 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33612" started-at="2019-12-05T23:00:43 IST" finished-at="2019-12-05T23:01:17 IST">
+  <suite name="Default suite" duration-ms="61832" started-at="2019-12-06T12:21:42 IST" finished-at="2019-12-06T12:22:44 IST">
     <groups>
+      <group name="simple">
+        <method signature="RTTC004OrderDetailsTest.ValidateOrder()[pri:0, instance:com.training.simple.tests.RTTC004OrderDetailsTest@6321e813]" name="ValidateOrder" class="com.training.simple.tests.RTTC004OrderDetailsTest"/>
+      </group> <!-- simple -->
     </groups>
-    <test name="Default test" duration-ms="33612" started-at="2019-12-05T23:00:43 IST" finished-at="2019-12-05T23:01:17 IST">
-      <class name="com.training.simple.tests.RTTC002LoginTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.simple.tests.RTTC002LoginTest@79be0360]" name="setUpBeforeClass" is-config="true" duration-ms="18" started-at="2019-12-05T23:00:44 IST" finished-at="2019-12-05T23:00:44 IST">
+    <test name="Default test" duration-ms="61832" started-at="2019-12-06T12:21:42 IST" finished-at="2019-12-06T12:22:44 IST">
+      <class name="com.training.simple.tests.RTTC004OrderDetailsTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.simple.tests.RTTC004OrderDetailsTest@6321e813]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2019-12-06T12:21:42 IST" finished-at="2019-12-06T12:21:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.simple.tests.RTTC002LoginTest@79be0360]" name="setUp" is-config="true" duration-ms="24827" started-at="2019-12-05T23:00:44 IST" finished-at="2019-12-05T23:01:08 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.simple.tests.RTTC004OrderDetailsTest@6321e813]" name="setUp" is-config="true" duration-ms="55187" started-at="2019-12-06T12:21:42 IST" finished-at="2019-12-06T12:22:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="UserLoginTest()[pri:0, instance:com.training.simple.tests.RTTC002LoginTest@79be0360]" name="UserLoginTest" duration-ms="7758" started-at="2019-12-05T23:01:08 IST" finished-at="2019-12-05T23:01:16 IST">
+        <test-method status="PASS" signature="ValidateOrder()[pri:0, instance:com.training.simple.tests.RTTC004OrderDetailsTest@6321e813]" name="ValidateOrder" duration-ms="6575" started-at="2019-12-06T12:22:37 IST" finished-at="2019-12-06T12:22:44 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.simple.tests.RTTC002LoginTest@79be0360]" name="tearDown" is-config="true" duration-ms="965" started-at="2019-12-05T23:01:16 IST" finished-at="2019-12-05T23:01:17 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.training.simple.tests.RTTC002LoginTest -->
+        </test-method> <!-- ValidateOrder -->
+      </class> <!-- com.training.simple.tests.RTTC004OrderDetailsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

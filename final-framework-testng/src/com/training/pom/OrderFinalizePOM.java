@@ -88,24 +88,21 @@ private WebElement statePmt;
 private WebElement shippingAddress;
 
 
-public void validateBillingPage()
+public void validateBillingPage() //this method will check Billing section is displayed or not
 {
 	String expectedDelivery="Step 2: Billing Details";
 	Assert.assertEquals(billingDetails.getText(), expectedDelivery);	
 }
 
-public void clickContinueBilling()
+public void clickContinueBilling()  //this method will click on continue button on Billing section and check if Delivery Details section is displayed or not
 {
 	continueBtnBilling.click();
 	String expectedDelivery="Step 3: Delivery Details";
 	Assert.assertEquals(deliveyDetails.getText(), expectedDelivery);
 }
 
-public void validateDeliverySection()
-{
 
-}
-public void clickContinueDelivery()
+public void clickContinueDelivery() // this method will click on Continue button in DeliveryDetail
 {
 	continueBtnDelivery.click();
 	Assert.assertTrue(freeShipping.isSelected());
@@ -115,20 +112,14 @@ public void clickContinueDelivery()
 }	
 
 
-public void validateDeliveryMtd()
-{ 	
-
-	
-}
-
-public void clickContinueDeliveryMtd()
+public void clickContinueDeliveryMtd() //this method will add comments and click on continue in delivery Method section
 {
 	textArea.sendKeys("This product is nice");
 	 continueBtnDeliMtd.click(); 	
    
 }
 
-public void clickAgreeCheck()
+public void clickAgreeCheck() //this method will click on terms and condition check box
 {
 	WebDriverWait wait = new WebDriverWait(driver, 2000);
     wait.until(ExpectedConditions.visibilityOf(agreeCheck));
@@ -137,7 +128,7 @@ public void clickAgreeCheck()
      Assert.assertTrue(agreeCheck.isSelected());
 }
 
-public void clickContinuePayment()
+public void clickContinuePayment() // this method will click on Continue button for Payment section
 {
 	continueBtnPmt.click();
 	String expectedTitle="Step 6: Confirm Order";
@@ -149,20 +140,6 @@ public void clickOrderConfirmation()
 	confirmOrderBtn.click();
    	
 }
-   public void finalizeOrder()
-     {
-	     continueBtnBilling.click();   // click on Continue button in Billing Details section.
-	     continueBtnDelivery.click();  //click on Continue button in Delivery address Details section.
-	     continueBtnDeliMtd.click();   //click on continue button in DeliveryMethod section 
-	     agreeCheck.isEnabled();       //checking if terms and condition check box is enabled
-	     agreeCheck.click();           // click on the terms and conditions check box
-	      continueBtnPmt.click();      // click on the Continue in Payment method section
-	      confirmOrderBtn.click();     //click on Confirm Order button in confirmation section.
-      }
-
-
-
-
-
+   
 
 }
