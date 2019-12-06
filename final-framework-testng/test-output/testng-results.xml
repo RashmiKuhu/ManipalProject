@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="13" passed="12">
+<testng-results skipped="0" failed="1" ignored="0" total="24" passed="23">
   <reporter-output>
   </reporter-output>
-  <suite name="Complex Test" duration-ms="502573" started-at="2019-12-06T14:42:15 IST" finished-at="2019-12-06T14:50:38 IST">
+  <suite name="Complex Test" duration-ms="474173" started-at="2019-12-06T15:34:04 IST" finished-at="2019-12-06T15:41:58 IST">
     <groups>
     </groups>
-    <test name="Complex Test" duration-ms="502573" started-at="2019-12-06T14:42:15 IST" finished-at="2019-12-06T14:50:38 IST">
+    <test name="Complex Test" duration-ms="474173" started-at="2019-12-06T15:34:04 IST" finished-at="2019-12-06T15:41:58 IST">
       <class name="com.training.complex.tests.RTTC061RegisterUserDBTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@4bbfb90a]" name="setUpBeforeClass" is-config="true" duration-ms="32" started-at="2019-12-06T14:42:15 IST" finished-at="2019-12-06T14:42:15 IST">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@57e1b0c]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-12-06T15:34:04 IST" finished-at="2019-12-06T15:34:04 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@4bbfb90a]" name="setUp" is-config="true" duration-ms="28258" started-at="2019-12-06T14:42:15 IST" finished-at="2019-12-06T14:42:44 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@57e1b0c]" name="setUp" is-config="true" duration-ms="22721" started-at="2019-12-06T15:34:04 IST" finished-at="2019-12-06T15:34:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@4bbfb90a]" name="RegisterUserTest" duration-ms="19277" started-at="2019-12-06T14:42:44 IST" data-provider="xls-inputs" finished-at="2019-12-06T14:43:03 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@57e1b0c]" name="RegisterUserTest" duration-ms="19825" started-at="2019-12-06T15:34:27 IST" data-provider="xls-inputs" finished-at="2019-12-06T15:34:47 IST">
           <params>
             <param index="0">
               <value>
@@ -86,25 +86,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@4bbfb90a]" name="cleanUp" is-config="true" duration-ms="2431" started-at="2019-12-06T14:43:03 IST" finished-at="2019-12-06T14:43:05 IST">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@57e1b0c]" name="cleanUp" is-config="true" duration-ms="2352" started-at="2019-12-06T15:34:47 IST" finished-at="2019-12-06T15:34:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@4bbfb90a]" name="tearDown" is-config="true" duration-ms="866" started-at="2019-12-06T14:50:36 IST" finished-at="2019-12-06T14:50:37 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC061RegisterUserDBTest@57e1b0c]" name="tearDown" is-config="true" duration-ms="886" started-at="2019-12-06T15:41:56 IST" finished-at="2019-12-06T15:41:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.training.complex.tests.RTTC061RegisterUserDBTest -->
       <class name="com.training.complex.tests.RTTC063RegisterInvalidUser">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="setUpBeforeClass" is-config="true" duration-ms="2" started-at="2019-12-06T14:46:47 IST" finished-at="2019-12-06T14:46:47 IST">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2019-12-06T15:37:55 IST" finished-at="2019-12-06T15:37:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="setUp" is-config="true" duration-ms="25267" started-at="2019-12-06T14:46:47 IST" finished-at="2019-12-06T14:47:13 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="setUp" is-config="true" duration-ms="31910" started-at="2019-12-06T15:37:55 IST" finished-at="2019-12-06T15:38:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="RegisterUserTest" duration-ms="7750" started-at="2019-12-06T14:47:13 IST" data-provider="invalidUser" finished-at="2019-12-06T14:47:20 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="RegisterUserTest" duration-ms="7395" started-at="2019-12-06T15:38:27 IST" data-provider="invalidUser" finished-at="2019-12-06T15:38:34 IST">
           <params>
             <param index="0">
               <value>
@@ -175,15 +175,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="cleanUp" is-config="true" duration-ms="1015" started-at="2019-12-06T14:47:20 IST" finished-at="2019-12-06T14:47:21 IST">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="cleanUp" is-config="true" duration-ms="1017" started-at="2019-12-06T15:38:34 IST" finished-at="2019-12-06T15:38:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="setUp" is-config="true" duration-ms="24513" started-at="2019-12-06T14:47:21 IST" finished-at="2019-12-06T14:47:46 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="setUp" is-config="true" duration-ms="25519" started-at="2019-12-06T15:38:35 IST" finished-at="2019-12-06T15:39:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="RegisterUserTest" duration-ms="7710" started-at="2019-12-06T14:47:46 IST" data-provider="invalidUser" finished-at="2019-12-06T14:47:54 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="RegisterUserTest" duration-ms="7978" started-at="2019-12-06T15:39:01 IST" data-provider="invalidUser" finished-at="2019-12-06T15:39:09 IST">
           <params>
             <param index="0">
               <value>
@@ -254,15 +254,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="cleanUp" is-config="true" duration-ms="889" started-at="2019-12-06T14:47:54 IST" finished-at="2019-12-06T14:47:55 IST">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="cleanUp" is-config="true" duration-ms="989" started-at="2019-12-06T15:39:09 IST" finished-at="2019-12-06T15:39:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="setUp" is-config="true" duration-ms="25230" started-at="2019-12-06T14:47:55 IST" finished-at="2019-12-06T14:48:20 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="setUp" is-config="true" duration-ms="25733" started-at="2019-12-06T15:39:10 IST" finished-at="2019-12-06T15:39:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="RegisterUserTest" duration-ms="7763" started-at="2019-12-06T14:48:20 IST" data-provider="invalidUser" finished-at="2019-12-06T14:48:28 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="RegisterUserTest" duration-ms="9107" started-at="2019-12-06T15:39:36 IST" data-provider="invalidUser" finished-at="2019-12-06T15:39:45 IST">
           <params>
             <param index="0">
               <value>
@@ -333,15 +333,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="cleanUp" is-config="true" duration-ms="947" started-at="2019-12-06T14:48:28 IST" finished-at="2019-12-06T14:48:28 IST">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="cleanUp" is-config="true" duration-ms="1008" started-at="2019-12-06T15:39:45 IST" finished-at="2019-12-06T15:39:46 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="setUp" is-config="true" duration-ms="25808" started-at="2019-12-06T14:48:28 IST" finished-at="2019-12-06T14:48:54 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="setUp" is-config="true" duration-ms="25622" started-at="2019-12-06T15:39:46 IST" finished-at="2019-12-06T15:40:11 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="RegisterUserTest" duration-ms="8499" started-at="2019-12-06T14:48:54 IST" data-provider="invalidUser" finished-at="2019-12-06T14:49:03 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="RegisterUserTest" duration-ms="8576" started-at="2019-12-06T15:40:11 IST" data-provider="invalidUser" finished-at="2019-12-06T15:40:20 IST">
           <params>
             <param index="0">
               <value>
@@ -412,21 +412,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@9660f4e]" name="cleanUp" is-config="true" duration-ms="918" started-at="2019-12-06T14:49:03 IST" finished-at="2019-12-06T14:49:04 IST">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC063RegisterInvalidUser@1877ab81]" name="cleanUp" is-config="true" duration-ms="974" started-at="2019-12-06T15:40:20 IST" finished-at="2019-12-06T15:40:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
       </class> <!-- com.training.complex.tests.RTTC063RegisterInvalidUser -->
       <class name="com.training.complex.tests.RTTC064AdminAddCategory">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2019-12-06T14:49:04 IST" finished-at="2019-12-06T14:49:04 IST">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-12-06T15:40:21 IST" finished-at="2019-12-06T15:40:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="setUp" is-config="true" duration-ms="16038" started-at="2019-12-06T14:49:04 IST" finished-at="2019-12-06T14:49:20 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="setUp" is-config="true" duration-ms="15385" started-at="2019-12-06T15:40:21 IST" finished-at="2019-12-06T15:40:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addCategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="addCategory" duration-ms="7181" started-at="2019-12-06T14:49:20 IST" data-provider="addCategory" finished-at="2019-12-06T14:49:27 IST">
+        <test-method status="PASS" signature="addCategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="addCategory" duration-ms="6961" started-at="2019-12-06T15:40:36 IST" data-provider="addCategory" finished-at="2019-12-06T15:40:43 IST">
           <params>
             <param index="0">
               <value>
@@ -452,15 +452,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCategory -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="tearDown" is-config="true" duration-ms="936" started-at="2019-12-06T14:49:27 IST" finished-at="2019-12-06T14:49:28 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="tearDown" is-config="true" duration-ms="960" started-at="2019-12-06T15:40:43 IST" finished-at="2019-12-06T15:40:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="setUp" is-config="true" duration-ms="15059" started-at="2019-12-06T14:49:28 IST" finished-at="2019-12-06T14:49:43 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="setUp" is-config="true" duration-ms="16638" started-at="2019-12-06T15:40:44 IST" finished-at="2019-12-06T15:41:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addCategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="addCategory" duration-ms="6670" started-at="2019-12-06T14:49:43 IST" data-provider="addCategory" finished-at="2019-12-06T14:49:50 IST">
+        <test-method status="PASS" signature="addCategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="addCategory" duration-ms="6777" started-at="2019-12-06T15:41:01 IST" data-provider="addCategory" finished-at="2019-12-06T15:41:08 IST">
           <params>
             <param index="0">
               <value>
@@ -486,15 +486,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCategory -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="tearDown" is-config="true" duration-ms="858" started-at="2019-12-06T14:49:50 IST" finished-at="2019-12-06T14:49:51 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="tearDown" is-config="true" duration-ms="930" started-at="2019-12-06T15:41:08 IST" finished-at="2019-12-06T15:41:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="setUp" is-config="true" duration-ms="15940" started-at="2019-12-06T14:49:51 IST" finished-at="2019-12-06T14:50:07 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="setUp" is-config="true" duration-ms="15693" started-at="2019-12-06T15:41:09 IST" finished-at="2019-12-06T15:41:24 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addCategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="addCategory" duration-ms="6202" started-at="2019-12-06T14:50:07 IST" data-provider="addCategory" finished-at="2019-12-06T14:50:13 IST">
+        <test-method status="PASS" signature="addCategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="addCategory" duration-ms="6607" started-at="2019-12-06T15:41:24 IST" data-provider="addCategory" finished-at="2019-12-06T15:41:31 IST">
           <params>
             <param index="0">
               <value>
@@ -520,15 +520,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCategory -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="tearDown" is-config="true" duration-ms="997" started-at="2019-12-06T14:50:13 IST" finished-at="2019-12-06T14:50:14 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="tearDown" is-config="true" duration-ms="946" started-at="2019-12-06T15:41:31 IST" finished-at="2019-12-06T15:41:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="setUp" is-config="true" duration-ms="14872" started-at="2019-12-06T14:50:14 IST" finished-at="2019-12-06T14:50:29 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="setUp" is-config="true" duration-ms="16505" started-at="2019-12-06T15:41:32 IST" finished-at="2019-12-06T15:41:48 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="addCategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="addCategory" duration-ms="6179" started-at="2019-12-06T14:50:29 IST" data-provider="addCategory" finished-at="2019-12-06T14:50:35 IST">
+        <test-method status="PASS" signature="addCategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="addCategory" duration-ms="6982" started-at="2019-12-06T15:41:48 IST" data-provider="addCategory" finished-at="2019-12-06T15:41:55 IST">
           <params>
             <param index="0">
               <value>
@@ -554,21 +554,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCategory -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@5a8806ef]" name="tearDown" is-config="true" duration-ms="1100" started-at="2019-12-06T14:50:35 IST" finished-at="2019-12-06T14:50:36 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC064AdminAddCategory@305fd85d]" name="tearDown" is-config="true" duration-ms="989" started-at="2019-12-06T15:41:55 IST" finished-at="2019-12-06T15:41:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.training.complex.tests.RTTC064AdminAddCategory -->
       <class name="com.training.complex.tests.RTTC062MultipleUserRegistrationTest">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2019-12-06T14:43:05 IST" finished-at="2019-12-06T14:43:05 IST">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2019-12-06T15:34:49 IST" finished-at="2019-12-06T15:34:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="setUp" is-config="true" duration-ms="19589" started-at="2019-12-06T14:43:05 IST" finished-at="2019-12-06T14:43:25 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="setUp" is-config="true" duration-ms="17158" started-at="2019-12-06T15:34:49 IST" finished-at="2019-12-06T15:35:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="RegisterUserTest" duration-ms="26233" started-at="2019-12-06T14:43:25 IST" data-provider="xls-newuser" finished-at="2019-12-06T14:43:51 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="RegisterUserTest" duration-ms="24891" started-at="2019-12-06T15:35:06 IST" data-provider="xls-newuser" finished-at="2019-12-06T15:35:31 IST">
           <params>
             <param index="0">
               <value>
@@ -639,15 +639,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="cleanUp" is-config="true" duration-ms="2752" started-at="2019-12-06T14:43:51 IST" finished-at="2019-12-06T14:43:54 IST">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="cleanUp" is-config="true" duration-ms="2694" started-at="2019-12-06T15:35:31 IST" finished-at="2019-12-06T15:35:34 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="setUp" is-config="true" duration-ms="18657" started-at="2019-12-06T14:43:54 IST" finished-at="2019-12-06T14:44:13 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="setUp" is-config="true" duration-ms="19172" started-at="2019-12-06T15:35:34 IST" finished-at="2019-12-06T15:35:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="RegisterUserTest" duration-ms="25407" started-at="2019-12-06T14:44:13 IST" data-provider="xls-newuser" finished-at="2019-12-06T14:44:38 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="RegisterUserTest" duration-ms="26316" started-at="2019-12-06T15:35:53 IST" data-provider="xls-newuser" finished-at="2019-12-06T15:36:19 IST">
           <params>
             <param index="0">
               <value>
@@ -718,15 +718,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="cleanUp" is-config="true" duration-ms="2687" started-at="2019-12-06T14:44:38 IST" finished-at="2019-12-06T14:44:41 IST">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="cleanUp" is-config="true" duration-ms="3045" started-at="2019-12-06T15:36:19 IST" finished-at="2019-12-06T15:36:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="setUp" is-config="true" duration-ms="18331" started-at="2019-12-06T14:44:41 IST" finished-at="2019-12-06T14:44:59 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="setUp" is-config="true" duration-ms="16947" started-at="2019-12-06T15:36:22 IST" finished-at="2019-12-06T15:36:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="RegisterUserTest" duration-ms="25964" started-at="2019-12-06T14:44:59 IST" data-provider="xls-newuser" finished-at="2019-12-06T14:45:25 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="RegisterUserTest" duration-ms="25660" started-at="2019-12-06T15:36:39 IST" data-provider="xls-newuser" finished-at="2019-12-06T15:37:05 IST">
           <params>
             <param index="0">
               <value>
@@ -797,15 +797,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterUserTest -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="cleanUp" is-config="true" duration-ms="2627" started-at="2019-12-06T14:45:25 IST" finished-at="2019-12-06T14:45:28 IST">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="cleanUp" is-config="true" duration-ms="2651" started-at="2019-12-06T15:37:05 IST" finished-at="2019-12-06T15:37:08 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="setUp" is-config="true" duration-ms="18823" started-at="2019-12-06T14:45:28 IST" finished-at="2019-12-06T14:45:46 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="setUp" is-config="true" duration-ms="18349" started-at="2019-12-06T15:37:08 IST" finished-at="2019-12-06T15:37:26 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="RegisterUserTest" duration-ms="30799" started-at="2019-12-06T14:45:46 IST" data-provider="xls-newuser" finished-at="2019-12-06T14:46:17 IST">
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="RegisterUserTest" duration-ms="26088" started-at="2019-12-06T15:37:26 IST" data-provider="xls-newuser" finished-at="2019-12-06T15:37:52 IST">
           <params>
             <param index="0">
               <value>
@@ -873,28 +873,425 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUserTest -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="cleanUp" is-config="true" duration-ms="2903" started-at="2019-12-06T15:37:52 IST" finished-at="2019-12-06T15:37:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@4232c52b]" name="tearDown" is-config="true" duration-ms="909" started-at="2019-12-06T15:41:57 IST" finished-at="2019-12-06T15:41:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.complex.tests.RTTC062MultipleUserRegistrationTest -->
+    </test> <!-- Complex Test -->
+  </suite> <!-- Complex Test -->
+  <suite name="Simple Test" duration-ms="189020" started-at="2019-12-06T15:26:24 IST" finished-at="2019-12-06T15:29:33 IST">
+    <groups>
+      <group name="simple">
+        <method signature="RTTC004OrderDetailsTest.ValidateOrder()[pri:0, instance:com.training.simple.tests.RTTC004OrderDetailsTest@5a8806ef]" name="ValidateOrder" class="com.training.simple.tests.RTTC004OrderDetailsTest"/>
+      </group> <!-- simple -->
+    </groups>
+    <test name="Sample test" duration-ms="189020" started-at="2019-12-06T15:26:24 IST" finished-at="2019-12-06T15:29:33 IST">
+      <class name="com.training.simple.tests.RTTC001RegisterUserTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.simple.tests.RTTC001RegisterUserTest@4bbfb90a]" name="setUpBeforeClass" is-config="true" duration-ms="25" started-at="2019-12-06T15:26:24 IST" finished-at="2019-12-06T15:26:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.simple.tests.RTTC001RegisterUserTest@4bbfb90a]" name="setUp" is-config="true" duration-ms="25626" started-at="2019-12-06T15:26:24 IST" finished-at="2019-12-06T15:26:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="RegisterUserTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.simple.tests.RTTC001RegisterUserTest@4bbfb90a]" name="RegisterUserTest" duration-ms="19122" started-at="2019-12-06T15:26:50 IST" data-provider="xls-inputs" finished-at="2019-12-06T15:27:09 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kuhu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Singh]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[kuhuReshu45@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Kadugodi]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Kannamangala]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[560067]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[reshu198]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[reshu198]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterUserTest -->
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.training.simple.tests.RTTC001RegisterUserTest@4bbfb90a]" name="cleanUp" is-config="true" duration-ms="2961" started-at="2019-12-06T15:27:09 IST" finished-at="2019-12-06T15:27:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.simple.tests.RTTC001RegisterUserTest@4bbfb90a]" name="tearDown" is-config="true" duration-ms="774" started-at="2019-12-06T15:29:32 IST" finished-at="2019-12-06T15:29:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.simple.tests.RTTC001RegisterUserTest -->
+      <class name="com.training.simple.tests.RTTC002LoginTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.simple.tests.RTTC002LoginTest@7c29daf3]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-12-06T15:27:12 IST" finished-at="2019-12-06T15:27:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.simple.tests.RTTC002LoginTest@7c29daf3]" name="setUp" is-config="true" duration-ms="21975" started-at="2019-12-06T15:27:12 IST" finished-at="2019-12-06T15:27:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="UserLoginTest()[pri:0, instance:com.training.simple.tests.RTTC002LoginTest@7c29daf3]" name="UserLoginTest" duration-ms="9072" started-at="2019-12-06T15:27:34 IST" finished-at="2019-12-06T15:27:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.simple.tests.RTTC002LoginTest@7c29daf3]" name="tearDown" is-config="true" duration-ms="991" started-at="2019-12-06T15:27:43 IST" finished-at="2019-12-06T15:27:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.simple.tests.RTTC002LoginTest -->
+      <class name="com.training.simple.tests.RTTC003ForgotPasswordTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.simple.tests.RTTC003ForgotPasswordTest@9660f4e]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2019-12-06T15:27:44 IST" finished-at="2019-12-06T15:27:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.simple.tests.RTTC003ForgotPasswordTest@9660f4e]" name="setUp" is-config="true" duration-ms="23109" started-at="2019-12-06T15:27:44 IST" finished-at="2019-12-06T15:28:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ForgotPasswordTest()[pri:0, instance:com.training.simple.tests.RTTC003ForgotPasswordTest@9660f4e]" name="ForgotPasswordTest" duration-ms="10417" started-at="2019-12-06T15:28:07 IST" finished-at="2019-12-06T15:28:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgotPasswordTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.simple.tests.RTTC003ForgotPasswordTest@9660f4e]" name="tearDown" is-config="true" duration-ms="995" started-at="2019-12-06T15:28:18 IST" finished-at="2019-12-06T15:28:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.simple.tests.RTTC003ForgotPasswordTest -->
+      <class name="com.training.simple.tests.RTTC004OrderDetailsTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.simple.tests.RTTC004OrderDetailsTest@5a8806ef]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2019-12-06T15:28:19 IST" finished-at="2019-12-06T15:28:19 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.simple.tests.RTTC004OrderDetailsTest@5a8806ef]" name="setUp" is-config="true" duration-ms="65352" started-at="2019-12-06T15:28:19 IST" finished-at="2019-12-06T15:29:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ValidateOrder()[pri:0, instance:com.training.simple.tests.RTTC004OrderDetailsTest@5a8806ef]" name="ValidateOrder" duration-ms="8389" started-at="2019-12-06T15:29:24 IST" finished-at="2019-12-06T15:29:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateOrder -->
+      </class> <!-- com.training.simple.tests.RTTC004OrderDetailsTest -->
+    </test> <!-- Sample test -->
+  </suite> <!-- Simple Test -->
+  <suite name="Medium Test" duration-ms="270769" started-at="2019-12-06T15:29:33 IST" finished-at="2019-12-06T15:34:04 IST">
+    <groups>
+    </groups>
+    <test name="Medium Test" duration-ms="270769" started-at="2019-12-06T15:29:33 IST" finished-at="2019-12-06T15:34:04 IST">
+      <class name="com.training.medium.tests.RTTC033CheckoutWithLoginTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@33f88ab]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-12-06T15:31:56 IST" finished-at="2019-12-06T15:31:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@33f88ab]" name="setUp" is-config="true" duration-ms="25441" started-at="2019-12-06T15:31:56 IST" finished-at="2019-12-06T15:32:21 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="OrderTestWithLoginLogin()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@33f88ab]" name="OrderTestWithLoginLogin" duration-ms="43327" started-at="2019-12-06T15:32:21 IST" finished-at="2019-12-06T15:33:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderTestWithLoginLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC033CheckoutWithLoginTest@33f88ab]" name="tearDown" is-config="true" duration-ms="1137" started-at="2019-12-06T15:33:05 IST" finished-at="2019-12-06T15:33:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.medium.tests.RTTC033CheckoutWithLoginTest -->
+      <class name="com.training.medium.tests.RTTC034OrderAsGuestUserTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC034OrderAsGuestUserTest@27a8c74e]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-12-06T15:33:06 IST" finished-at="2019-12-06T15:33:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC034OrderAsGuestUserTest@27a8c74e]" name="setUp" is-config="true" duration-ms="18231" started-at="2019-12-06T15:33:06 IST" finished-at="2019-12-06T15:33:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="OrderAsGuestUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC034OrderAsGuestUserTest@27a8c74e]" name="OrderAsGuestUser" duration-ms="38739" started-at="2019-12-06T15:33:24 IST" data-provider="xls-inputs" finished-at="2019-12-06T15:34:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kuhu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Singh]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[kuhuReshu45@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Kadugodi]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Kannamangala]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[560067]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Karnataka]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[reshu198]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[reshu198]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderAsGuestUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC034OrderAsGuestUserTest@27a8c74e]" name="tearDown" is-config="true" duration-ms="1040" started-at="2019-12-06T15:34:03 IST" finished-at="2019-12-06T15:34:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.medium.tests.RTTC034OrderAsGuestUserTest -->
+      <class name="com.training.medium.tests.RTTC031LoginErrorTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="setUpBeforeClass" is-config="true" duration-ms="1" started-at="2019-12-06T15:29:33 IST" finished-at="2019-12-06T15:29:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="setUp" is-config="true" duration-ms="24828" started-at="2019-12-06T15:29:33 IST" finished-at="2019-12-06T15:29:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateUserLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="validateUserLoginTest" duration-ms="4307" started-at="2019-12-06T15:29:58 IST" data-provider="xls-Login" finished-at="2019-12-06T15:30:02 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="tearDown" is-config="true" duration-ms="1968" started-at="2019-12-06T15:30:02 IST" finished-at="2019-12-06T15:30:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="setUp" is-config="true" duration-ms="23551" started-at="2019-12-06T15:30:04 IST" finished-at="2019-12-06T15:30:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateUserLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="validateUserLoginTest" duration-ms="3559" started-at="2019-12-06T15:30:28 IST" data-provider="xls-Login" finished-at="2019-12-06T15:30:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="tearDown" is-config="true" duration-ms="1979" started-at="2019-12-06T15:30:31 IST" finished-at="2019-12-06T15:30:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="setUp" is-config="true" duration-ms="23517" started-at="2019-12-06T15:30:33 IST" finished-at="2019-12-06T15:30:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateUserLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="validateUserLoginTest" duration-ms="4171" started-at="2019-12-06T15:30:57 IST" data-provider="xls-Login" finished-at="2019-12-06T15:31:01 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manzoor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mehadi]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="tearDown" is-config="true" duration-ms="2014" started-at="2019-12-06T15:31:01 IST" finished-at="2019-12-06T15:31:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="setUp" is-config="true" duration-ms="24659" started-at="2019-12-06T15:31:03 IST" finished-at="2019-12-06T15:31:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateUserLoginTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="validateUserLoginTest" duration-ms="4177" started-at="2019-12-06T15:31:28 IST" data-provider="xls-Login" finished-at="2019-12-06T15:31:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manz1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[manz1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC031LoginErrorTest@3712b94]" name="tearDown" is-config="true" duration-ms="2127" started-at="2019-12-06T15:31:32 IST" finished-at="2019-12-06T15:31:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.medium.tests.RTTC031LoginErrorTest -->
+      <class name="com.training.medium.tests.RTTC032CheckoutLoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.medium.tests.RTTC032CheckoutLoginTest@2833cc44]" name="setUp" is-config="true" duration-ms="19572" started-at="2019-12-06T15:31:34 IST" finished-at="2019-12-06T15:31:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.medium.tests.RTTC032CheckoutLoginTest@2833cc44]" name="setUpBeforeClass" is-config="true" duration-ms="0" started-at="2019-12-06T15:31:34 IST" finished-at="2019-12-06T15:31:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="FAIL" signature="OrderTestwithoutLogin()[pri:0, instance:com.training.medium.tests.RTTC032CheckoutLoginTest@2833cc44]" name="OrderTestwithoutLogin" duration-ms="1047" started-at="2019-12-06T15:31:54 IST" finished-at="2019-12-06T15:31:55 IST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-primary']"}
+              <![CDATA[element click intercepted: Element <a href="http://retail.upskills.in/nam-sed-sed">...</a> is not clickable at point (142, 699). Other element would receive the click: <div class="row_x7apV row-wrap tb_content_fixed tb_mb_20 lazyload" data-expand="60">...</div>
   (Session info: chrome=78.0.3904.108)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'DESKTOP-G9U9536', ip: '9.81.207.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir18520_264073136}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:63181}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 0d7e48764e6842245a677fee64edc0a8
-*** Element info: {Using=xpath, value=//a[@class='btn btn-primary']}]]>
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir23568_803192690}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64399}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 71f81502cbcbbaf077877d03d237c82b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='btn btn-primary']"}
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="http://retail.upskills.in/nam-sed-sed">...</a> is not clickable at point (142, 699). Other element would receive the click: <div class="row_x7apV row-wrap tb_content_fixed tb_mb_20 lazyload" data-expand="60">...</div>
   (Session info: chrome=78.0.3904.108)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
 System info: host: 'DESKTOP-G9U9536', ip: '9.81.207.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir18520_264073136}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:63181}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 0d7e48764e6842245a677fee64edc0a8
-*** Element info: {Using=xpath, value=//a[@class='btn btn-primary']}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir23568_803192690}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:64399}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
+Session ID: 71f81502cbcbbaf077877d03d237c82b
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -905,15 +1302,15 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy12.click(Unknown Source)
-at com.training.pom.LoginRegisterPOM.clickRegisterBtn(LoginRegisterPOM.java:52)
-at com.training.complex.tests.RTTC062MultipleUserRegistrationTest.RegisterUserTest(RTTC062MultipleUserRegistrationTest.java:94)
+at com.training.pom.RetailHomePOM.selectProduct(RetailHomePOM.java:41)
+at com.training.medium.tests.RTTC032CheckoutLoginTest.OrderTestwithoutLogin(RTTC032CheckoutLoginTest.java:63)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -945,100 +1342,18 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RegisterUserTest -->
-        <test-method status="FAIL" signature="cleanUp()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="cleanUp" is-config="true" duration-ms="30032" started-at="2019-12-06T14:46:17 IST" finished-at="2019-12-06T14:46:47 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='form-customer']/div/table/tbody/tr[1]/td[1]/input"}
-  (Session info: chrome=78.0.3904.108)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-G9U9536', ip: '9.81.207.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir18520_264073136}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:63181}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 0d7e48764e6842245a677fee64edc0a8
-*** Element info: {Using=xpath, value=//*[@id='form-customer']/div/table/tbody/tr[1]/td[1]/input}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='form-customer']/div/table/tbody/tr[1]/td[1]/input"}
-  (Session info: chrome=78.0.3904.108)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
-System info: host: 'DESKTOP-G9U9536', ip: '9.81.207.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\RASHMI~1\AppData\Local\Temp\scoped_dir18520_264073136}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=XP, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:63181}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=XP, setWindowRect=true}]
-Session ID: 0d7e48764e6842245a677fee64edc0a8
-*** Element info: {Using=xpath, value=//*[@id='form-customer']/div/table/tbody/tr[1]/td[1]/input}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy12.isEnabled(Unknown Source)
-at com.training.pom.CustomerDetailsPOM.deleteCustomer(CustomerDetailsPOM.java:99)
-at com.training.complex.tests.RTTC062MultipleUserRegistrationTest.cleanUp(RTTC062MultipleUserRegistrationTest.java:75)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:683)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:658)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:642)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1175)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.complex.tests.RTTC062MultipleUserRegistrationTest@7c29daf3]" name="tearDown" is-config="true" duration-ms="900" started-at="2019-12-06T14:50:37 IST" finished-at="2019-12-06T14:50:38 IST">
+        </test-method> <!-- OrderTestwithoutLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.medium.tests.RTTC032CheckoutLoginTest@2833cc44]" name="tearDown" is-config="true" duration-ms="1092" started-at="2019-12-06T15:31:55 IST" finished-at="2019-12-06T15:31:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.complex.tests.RTTC062MultipleUserRegistrationTest -->
-    </test> <!-- Complex Test -->
-  </suite> <!-- Complex Test -->
-  <suite name="All Suites" duration-ms="0" started-at="2019-12-06T14:50:38 IST" finished-at="2019-12-06T14:50:38 IST">
+      </class> <!-- com.training.medium.tests.RTTC032CheckoutLoginTest -->
+    </test> <!-- Medium Test -->
+  </suite> <!-- Medium Test -->
+  <suite name="All Suites" duration-ms="0" started-at="2019-12-06T15:41:59 IST" finished-at="2019-12-06T15:41:59 IST">
     <groups>
     </groups>
   </suite> <!-- All Suites -->

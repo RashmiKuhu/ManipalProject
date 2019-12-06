@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name = "Medium Test">
+   <test name = "Medium Test">
+      <classes>
+         <class name = "com.training.medium.tests.RTTC031LoginErrorTest" />
+         <class name = "com.training.medium.tests.RTTC032CheckoutLoginTest" />
+         <class name = "com.training.medium.tests.RTTC033CheckoutWithLoginTest" />
+         <class name = "com.training.medium.tests.RTTC034OrderAsGuestUserTest" />
+      </classes>
+   </test>
+</suite>	
